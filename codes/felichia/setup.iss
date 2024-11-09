@@ -58,7 +58,7 @@ Name: "pintostartmenu"; Description: "Fixar no Menu Iniciar"; GroupDescription: 
 
 [Files]
 ; Copia todos os arquivos da pasta dist\Felichia
-Source: "dist\Felichia\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs
+Source: "dist\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs
 Source: "assets\*"; DestDir: "{app}\assets"; Flags: ignoreversion recursesubdirs createallsubdirs
 Source: "license.txt"; DestDir: "{app}"; Flags: ignoreversion
 
