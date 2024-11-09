@@ -1,5 +1,5 @@
 #define MyAppName "Felichia"
-#define MyAppVersion "1.0"
+#define MyAppVersion "1.2"
 #define MyAppPublisher "Gabriel Castelo"
 #define MyAppURL "https://github.com/gacastelo"
 #define MyAppExeName "Felichia.exe"
@@ -28,7 +28,7 @@ SolidCompression=yes
 ; Ícone do instalador
 SetupIconFile=assets\Felichia_logo3.ico
 ; Requisitos mínimos
-MinVersion=10.0
+MinVersion=7.0
 ; Privilégios necessários (alterado para usuário normal)
 PrivilegesRequired=lowest
 ; Informações sobre o instalador
@@ -57,7 +57,14 @@ Name: "desktopicon"; Description: "Criar ícone na área de trabalho"; GroupDesc
 Name: "pintostartmenu"; Description: "Fixar no Menu Iniciar"; GroupDescription: "Ícones adicionais"; Flags: checkedonce
 
 [Files]
-Source: "dist\Felichia.exe"; DestDir: "{app}"; Flags: ignoreversion
+; Copia todos os arquivos da pasta dist\Felichia
+Source: "dist\Felichia\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs
+Source: "assets\*"; DestDir: "{app}\assets"; Flags: ignoreversion recursesubdirs createallsubdirs
+Source: "license.txt"; DestDir: "{app}"; Flags: ignoreversion
+
+[InstallDelete]
+Type: files; Name: "{app}\*.*"
+Type: dirifempty; Name: "{app}"
 
 [Icons]
 ; Ícones normais
