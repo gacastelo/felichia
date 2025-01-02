@@ -1,7 +1,7 @@
 # Felichia Password Manager
 
 <p align="center">
-  <img src="[felichia/src/assets/felichia_logo.png](https://cdn.discordapp.com/attachments/1309361518449524766/1324422965311311986/felichia_logo.png?ex=67781881&is=6776c701&hm=19214e70b16134bb390a10cb90e4fa36c69769eb49930ee90ad1fefd1b9cf5f1&)" alt="Felichia Logo" width="400"/>
+  <img src="codes/felichia/assets/felichia_logo.png" alt="Felichia Logo" width="400"/>
 </p>
 
 ## 📋 Sobre
