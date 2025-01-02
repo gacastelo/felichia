@@ -1,5 +1,8 @@
 import customtkinter as ctk
 import re
+import shutil
+import os
+from tkinter import filedialog, messagebox
 
 class CadastroView(ctk.CTkFrame):
     def __init__(self, master):
@@ -121,6 +124,16 @@ class CadastroView(ctk.CTkFrame):
             hover_color="#7667a3"  # roxinho fofo mais escuro
         )
         btn_voltar.pack(side="left", padx=5)
+
+        # Botão de inserir chave
+        btn_voltar = ctk.CTkButton(
+            frame_botoes,
+            text="Inserir Chave",
+            command=self._inserir_chave,
+            fg_color="#8E7CC3",  # roxinho fofo
+            hover_color="#7667a3"  # roxinho fofo mais escuro
+        )
+        btn_voltar.pack(side="left", padx=5)
         
         # Bind para verificar força da senha
         self.password_entry.bind("<KeyRelease>", self._verificar_forca_senha)
@@ -218,3 +231,37 @@ class CadastroView(ctk.CTkFrame):
     def _mostrar_sucesso(self, mensagem):
         from views.popups.mensagem_popup import MensagemPopup
         MensagemPopup(self, "Sucesso", mensagem)
+
+    def _inserir_chave(self):
+        try:
+            # Solicita ao usuário que selecione o arquivo da chave
+            arquivo_chave = filedialog.askopenfilename(
+                title="Selecione a chave",
+                filetypes=[("Arquivo de Chave", "*.key")]
+            )
+            
+            if not arquivo_chave:
+                # Se o usuário cancelar
+                messagebox.showwarning("Cancelado", "Operação cancelada.")
+                return
+            
+            # Verifica se o arquivo selecionado existe
+            if not os.path.exists(arquivo_chave):
+                messagebox.showerror("Erro", "O arquivo da chave não foi encontrado.")
+                return
+            
+            # Caminho de destino para a chave
+            pasta_destino = os.path.join(os.getcwd(), "data", "chave.key")
+            
+            # Cria a pasta "data" se ela não existir
+            os.makedirs(os.path.dirname(pasta_destino), exist_ok=True)
+            
+            # Copia a chave para o diretório de destino
+            shutil.copy(arquivo_chave, pasta_destino)
+            
+            # Mensagem de sucesso
+            messagebox.showinfo("Sucesso", f"A chave foi inserida em: {pasta_destino}, agora pode prosseguir com seu cadastro para acessar suas senhas")
+        
+        except Exception as e:
+            # Se ocorrer um erro
+            messagebox.showerror("Erro", f"Ocorreu um erro ao inserir a chave: {str(e)}")

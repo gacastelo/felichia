@@ -16,13 +16,13 @@ class MensagemPopup(BasePopup):
         # Configura o ícone diretamente
         try:
             if os.name == 'nt':  # Windows
-                icon_path = Path(__file__).parent/ "assets" / "icones" / "felichia.ico"
+                icon_path = Path(__file__).parent/ "assets" / "icones" / "Felichia_logo.ico"
                 self.iconbitmap(str(icon_path))
                 self.wm_iconbitmap(str(icon_path))
                 # Força o Windows a atualizar o ícone
                 self.update_idletasks()
             else:  # Linux/Mac
-                icon_path = Path(__file__).parent/ "assets" / "icones" / "felichia.png"
+                icon_path = Path(__file__).parent/ "assets" / "icones" / "felichia_logo2.png"
                 icon = tk.PhotoImage(file=str(icon_path))
                 self.iconphoto(True, icon)
         except Exception as e:

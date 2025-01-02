@@ -8,7 +8,7 @@ import pyperclip
 import logging
 from views.base_view import BaseView
 from views.popups.mensagem_popup import MensagemPopup
-from datetime import datetime
+from datetime import datetime, timedelta
 
 class GerenciadorView(BaseView):
     def __init__(self, master):
@@ -348,19 +348,24 @@ class GerenciadorView(BaseView):
 
     def _formatar_data(self, timestamp):
         try:
-            # Primeiro, vamos garantir que temos uma string e remover qualquer espaço extra
+            # Se timestamp for datetime, converta diretamente
+            if isinstance(timestamp, datetime):
+                return timestamp.strftime("%d/%m/%Y %H:%M")
+        
+            # Se for uma string, remova espaços extras
             timestamp_str = str(timestamp).strip()
-            
-            # Tenta fazer o parse da data
-            data = datetime.strptime(timestamp_str, "%Y-%m-%d %H:%M:%S.%f")
-            
-            # Formata para o padrão brasileiro
-            return data.strftime("%d/%m/%Y %H:%M")
-        except Exception as e:
-            # Se houver erro, tenta um formato alternativo sem os microssegundos
+
+            # Tenta fazer o parse da data com microssegundos
             try:
+                data = datetime.strptime(timestamp_str, "%Y-%m-%d %H:%M:%S.%f")
+            except ValueError:
+                # Caso falhe, tenta sem microssegundos
                 data = datetime.strptime(timestamp_str, "%Y-%m-%d %H:%M:%S")
-                return data.strftime("%d/%m/%Y %H:%M")
-            except:
-                # Se ainda houver erro, retorna o timestamp original
-                return timestamp_str
+                data -= timedelta(hours=3)
+
+            # Formata a data para o padrão brasileiro
+            return data.strftime("%d/%m/%Y %H:%M")
+    
+        except Exception as e:
+            # Se algo falhar, retorna o timestamp original
+            return str(timestamp)

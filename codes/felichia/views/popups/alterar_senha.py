@@ -89,7 +89,7 @@ class AlterarSenhaPopup(BaseSenhaPopup):
         
         # Container para tamanho - ajustado padding
         frame_tamanho = ctk.CTkFrame(frame_opcoes, fg_color="transparent")
-        frame_tamanho.pack(anchor="w", padx=int(10 * self.escala))
+        frame_tamanho.pack(anchor="w", padx=int(10 * self.escala))  # Mudado para anchor="w"
         
         ctk.CTkLabel(
             frame_tamanho,
@@ -97,7 +97,7 @@ class AlterarSenhaPopup(BaseSenhaPopup):
             font=("Roboto", int(12 * self.escala))
         ).pack(side="left")
         
-        self.tamanho_var = ctk.StringVar(value="16")  # Mudado para StringVar
+        self.tamanho_var = ctk.StringVar(value="16")
         self.tamanho_entry = ctk.CTkEntry(
             frame_tamanho,
             textvariable=self.tamanho_var,
@@ -193,7 +193,12 @@ class AlterarSenhaPopup(BaseSenhaPopup):
     
     def _gerar_senha(self):
         try:
-            tamanho = int(self.tamanho_var.get() or "16")  # Valor padrão se vazio
+            tamanho_str = self.tamanho_var.get().strip()  # Remove espaços em branco
+            if not tamanho_str:  # Se vazio, usa o padrão
+                tamanho = 16
+            else:
+                tamanho = int(tamanho_str)
+        
             if tamanho < 4:
                 self.master._mostrar_erro("O tamanho mínimo é 4!")
                 return
@@ -201,7 +206,7 @@ class AlterarSenhaPopup(BaseSenhaPopup):
                 self.master._mostrar_erro("O tamanho máximo é 1024!")
                 return
         except ValueError:
-            self.master._mostrar_erro("Tamanho inválido!")
+            self.master._mostrar_erro("Tamanho inválido! Insira um número entre 4 e 1024.")
             return
         
         caracteres = ""
@@ -216,15 +221,6 @@ class AlterarSenhaPopup(BaseSenhaPopup):
         
         if not caracteres:
             self.master._mostrar_erro("Selecione pelo menos uma opção!")
-            return
-        
-        try:
-            tamanho = self.tamanho_var.get()
-            if tamanho < 4:
-                self.master._mostrar_erro("O tamanho mínimo é 4!")
-                return
-        except:
-            self.master._mostrar_erro("Tamanho inválido!")
             return
         
         senha = ''.join(secrets.choice(caracteres) for _ in range(tamanho))

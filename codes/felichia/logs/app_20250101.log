@@ -1,0 +1,822 @@
+2025-01-01 16:09:47,484 - root - INFO - Sistema de logging iniciado com sucesso
+2025-01-01 16:09:47,485 - root - INFO - Logging iniciado com sucesso
+2025-01-01 16:09:47,590 - root - INFO - Tamanho da fonte alterado para: 13
+2025-01-01 16:09:47,601 - database - INFO - Tabelas criadas/verificadas com sucesso
+2025-01-01 16:09:47,791 - root - INFO - Procurando som em: C:\Users\mineg\Documents\felichia\codes\felichia\assets\sons\startup.wav
+2025-01-01 16:09:47,791 - root - INFO - Arquivo de som encontrado!
+2025-01-01 16:09:47,791 - root - INFO - Som iniciado com sucesso
+2025-01-01 16:10:02,082 - auth_controller - WARNING - Tentativa de login com usuário inexistente: Gabriel
+2025-01-01 16:10:02,092 - root - ERROR - Erro ao carregar ícone no popup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 16:10:02,092 - root - ERROR - Erro ao definir ícone no MensagemPopup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 16:10:08,853 - auth_controller - WARNING - Tentativa de login com usuário inexistente: Gabriel
+2025-01-01 16:10:08,862 - root - ERROR - Erro ao carregar ícone no popup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 16:10:08,862 - root - ERROR - Erro ao definir ícone no MensagemPopup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 16:10:31,460 - usuario_model - INFO - Novo usuário criado: Gabriel
+2025-01-01 16:10:31,462 - auth_controller - INFO - Novo usuário cadastrado: Gabriel
+2025-01-01 16:10:31,467 - root - ERROR - Erro ao carregar ícone no popup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 16:10:31,467 - root - ERROR - Erro ao definir ícone no MensagemPopup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 16:10:40,228 - usuario_model - INFO - Usuário atualizado: Gabriel
+2025-01-01 16:10:40,228 - auth_controller - INFO - Login bem sucedido: Gabriel
+2025-01-01 16:10:41,190 - usuario_model - INFO - Usuário atualizado: Gabriel
+2025-01-01 16:10:41,193 - auth_controller - INFO - Login bem sucedido: Gabriel
+2025-01-01 16:10:47,734 - usuario_model - INFO - Usuário atualizado: Gabriel
+2025-01-01 16:10:47,738 - auth_controller - INFO - Login bem sucedido: Gabriel
+2025-01-01 16:10:53,215 - root - ERROR - Erro ao carregar ícone no popup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 16:10:53,215 - root - ERROR - Erro ao definir ícone no MensagemPopup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 16:10:55,262 - usuario_model - INFO - Usuário atualizado: Gabriel
+2025-01-01 16:10:55,265 - root - ERROR - Erro ao carregar ícone no popup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 16:10:55,274 - root - ERROR - Erro ao definir ícone no MensagemPopup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 16:10:59,046 - usuario_model - INFO - Usuário atualizado: Gabriel
+2025-01-01 16:10:59,046 - auth_controller - INFO - Login bem sucedido: Gabriel
+2025-01-01 16:10:59,907 - usuario_model - INFO - Usuário atualizado: Gabriel
+2025-01-01 16:10:59,915 - auth_controller - INFO - Login bem sucedido: Gabriel
+2025-01-01 16:12:43,129 - root - INFO - Sistema de logging iniciado com sucesso
+2025-01-01 16:12:43,132 - root - INFO - Logging iniciado com sucesso
+2025-01-01 16:12:43,205 - root - INFO - Tamanho da fonte alterado para: 13
+2025-01-01 16:12:43,207 - database - INFO - Tabelas criadas/verificadas com sucesso
+2025-01-01 16:12:43,274 - root - INFO - Procurando som em: C:\Users\mineg\Documents\felichia\codes\felichia\assets\sons\startup.wav
+2025-01-01 16:12:43,278 - root - INFO - Arquivo de som encontrado!
+2025-01-01 16:12:43,278 - root - INFO - Som iniciado com sucesso
+2025-01-01 16:12:56,092 - usuario_model - INFO - Usuário atualizado: Gabriel
+2025-01-01 16:12:56,092 - root - ERROR - Erro ao carregar ícone no popup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 16:12:56,102 - root - ERROR - Erro ao definir ícone no MensagemPopup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 16:13:00,926 - usuario_model - INFO - Usuário atualizado: Gabriel
+2025-01-01 16:13:00,926 - auth_controller - INFO - Login bem sucedido: Gabriel
+2025-01-01 16:13:57,646 - root - INFO - Sistema de logging iniciado com sucesso
+2025-01-01 16:13:57,646 - root - INFO - Logging iniciado com sucesso
+2025-01-01 16:13:57,723 - root - INFO - Tamanho da fonte alterado para: 13
+2025-01-01 16:13:57,724 - database - INFO - Tabelas criadas/verificadas com sucesso
+2025-01-01 16:13:57,796 - root - INFO - Procurando som em: C:\Users\mineg\Documents\felichia\codes\felichia\assets\sons\startup.wav
+2025-01-01 16:13:57,796 - root - INFO - Arquivo de som encontrado!
+2025-01-01 16:13:57,799 - root - INFO - Som iniciado com sucesso
+2025-01-01 16:14:15,927 - usuario_model - INFO - Usuário atualizado: Gabriel
+2025-01-01 16:14:15,937 - auth_controller - INFO - Login bem sucedido: Gabriel
+2025-01-01 16:14:16,485 - senha_controller - INFO - Senhas listadas com sucesso
+2025-01-01 16:14:16,487 - gerenciador_view - INFO - Lista atualizada - nenhuma senha encontrada
+2025-01-01 16:14:50,572 - criptografia - INFO - Nova chave de criptografia criada
+2025-01-01 16:14:50,572 - senha_model - INFO - Nova senha criada para o site: a
+2025-01-01 16:14:50,579 - senha_controller - INFO - Nova senha adicionada para o site: a
+2025-01-01 16:14:50,589 - root - ERROR - Erro ao carregar ícone no popup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 16:14:50,589 - root - ERROR - Erro ao definir ícone no MensagemPopup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 16:14:52,774 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 16:14:52,774 - senha_controller - INFO - Senhas listadas com sucesso
+2025-01-01 16:14:52,779 - gerenciador_view - INFO - Lista atualizada com 1 senhas
+2025-01-01 16:14:59,359 - root - ERROR - Erro ao carregar ícone no popup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 16:14:59,359 - root - ERROR - Erro ao definir ícone no MensagemPopup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 16:15:02,095 - root - ERROR - Erro ao carregar ícone no popup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 16:15:02,095 - root - ERROR - Erro ao definir ícone no MensagemPopup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 16:15:05,310 - root - ERROR - Erro ao carregar ícone no popup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 16:15:05,310 - root - ERROR - Erro ao definir ícone no MensagemPopup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 16:15:08,180 - root - ERROR - Erro ao carregar ícone no popup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 16:15:08,180 - root - ERROR - Erro ao definir ícone no MensagemPopup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 16:15:22,615 - root - ERROR - Erro ao carregar ícone no popup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 16:15:28,961 - backup_service - INFO - Backup exportado com sucesso para: C:/Users/mineg/Desktop/backup_senhas_20250101_161525.json
+2025-01-01 16:15:28,971 - root - ERROR - Erro ao carregar ícone no popup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 16:15:28,975 - root - ERROR - Erro ao definir ícone no MensagemPopup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 16:18:07,720 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 16:18:07,720 - senha_model - INFO - Senha deletada para o site: a
+2025-01-01 16:18:07,720 - senha_controller - INFO - Senha removida para o site: a
+2025-01-01 16:18:07,730 - root - ERROR - Erro ao carregar ícone no popup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 16:18:07,734 - root - ERROR - Erro ao definir ícone no MensagemPopup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 16:18:07,741 - senha_controller - INFO - Senhas listadas com sucesso
+2025-01-01 16:18:07,747 - gerenciador_view - INFO - Lista atualizada - nenhuma senha encontrada
+2025-01-01 16:18:09,581 - root - ERROR - Erro ao carregar ícone no popup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 16:18:12,690 - root - ERROR - Erro ao carregar ícone no popup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 16:18:12,690 - root - ERROR - Erro ao definir ícone no MensagemPopup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 16:18:12,690 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 16:18:12,690 - senha_controller - INFO - Senhas listadas com sucesso
+2025-01-01 16:18:12,702 - gerenciador_view - INFO - Lista atualizada com 1 senhas
+2025-01-01 16:18:16,661 - root - ERROR - Erro ao carregar ícone no popup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 16:18:16,661 - root - ERROR - Erro ao definir ícone no MensagemPopup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 16:18:16,661 - gerenciador_view - INFO - Senha copiado para área de transferência
+2025-01-01 16:18:38,971 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 16:18:38,974 - senha_model - INFO - Nova senha criada para o site: a
+2025-01-01 16:18:38,974 - senha_controller - INFO - Nova senha adicionada para o site: a
+2025-01-01 16:18:38,982 - root - ERROR - Erro ao carregar ícone no popup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 16:18:38,986 - root - ERROR - Erro ao definir ícone no MensagemPopup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 16:18:40,756 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 16:18:40,756 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 16:18:40,756 - senha_controller - INFO - Senhas listadas com sucesso
+2025-01-01 16:18:40,772 - gerenciador_view - INFO - Lista atualizada com 2 senhas
+2025-01-01 16:18:43,504 - root - ERROR - Erro ao carregar ícone no popup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 16:18:46,588 - backup_service - INFO - Backup exportado com sucesso para: C:/Users/mineg/Desktop/12.json
+2025-01-01 16:18:46,593 - root - ERROR - Erro ao carregar ícone no popup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 16:18:46,593 - root - ERROR - Erro ao definir ícone no MensagemPopup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 16:18:50,933 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 16:18:50,937 - senha_model - INFO - Senha deletada para o site: a
+2025-01-01 16:18:50,937 - senha_controller - INFO - Senha removida para o site: a
+2025-01-01 16:18:50,943 - root - ERROR - Erro ao carregar ícone no popup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 16:18:50,943 - root - ERROR - Erro ao definir ícone no MensagemPopup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 16:18:50,953 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 16:18:50,953 - senha_controller - INFO - Senhas listadas com sucesso
+2025-01-01 16:18:50,963 - gerenciador_view - INFO - Lista atualizada com 1 senhas
+2025-01-01 16:18:52,749 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 16:18:52,753 - senha_model - INFO - Senha deletada para o site: a
+2025-01-01 16:18:52,753 - senha_controller - INFO - Senha removida para o site: a
+2025-01-01 16:18:52,753 - root - ERROR - Erro ao carregar ícone no popup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 16:18:52,763 - root - ERROR - Erro ao definir ícone no MensagemPopup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 16:18:52,765 - senha_controller - INFO - Senhas listadas com sucesso
+2025-01-01 16:18:52,773 - gerenciador_view - INFO - Lista atualizada - nenhuma senha encontrada
+2025-01-01 16:18:54,245 - root - ERROR - Erro ao carregar ícone no popup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 16:18:58,983 - root - ERROR - Erro ao carregar ícone no popup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 16:18:58,983 - root - ERROR - Erro ao definir ícone no MensagemPopup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 16:18:58,983 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 16:18:58,983 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 16:18:58,983 - senha_controller - INFO - Senhas listadas com sucesso
+2025-01-01 16:18:59,003 - gerenciador_view - INFO - Lista atualizada com 2 senhas
+2025-01-01 16:19:05,164 - root - ERROR - Erro ao carregar ícone no popup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 16:19:05,164 - root - ERROR - Erro ao definir ícone no MensagemPopup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 16:19:05,164 - gerenciador_view - INFO - Senha copiado para área de transferência
+2025-01-01 16:20:18,916 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 16:20:18,920 - senha_model - INFO - Senha deletada para o site: a
+2025-01-01 16:20:18,922 - senha_controller - INFO - Senha removida para o site: a
+2025-01-01 16:20:18,931 - root - ERROR - Erro ao carregar ícone no popup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 16:20:18,932 - root - ERROR - Erro ao definir ícone no MensagemPopup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 16:20:18,939 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 16:20:18,939 - senha_controller - INFO - Senhas listadas com sucesso
+2025-01-01 16:20:18,959 - gerenciador_view - INFO - Lista atualizada com 1 senhas
+2025-01-01 16:20:20,592 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 16:20:20,595 - senha_model - INFO - Senha deletada para o site: a
+2025-01-01 16:20:20,598 - senha_controller - INFO - Senha removida para o site: a
+2025-01-01 16:20:20,608 - root - ERROR - Erro ao carregar ícone no popup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 16:20:20,610 - root - ERROR - Erro ao definir ícone no MensagemPopup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 16:20:20,616 - senha_controller - INFO - Senhas listadas com sucesso
+2025-01-01 16:20:20,624 - gerenciador_view - INFO - Lista atualizada - nenhuma senha encontrada
+2025-01-01 16:21:33,496 - root - ERROR - Erro ao carregar ícone no popup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 16:21:37,836 - root - ERROR - Erro ao carregar ícone no popup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 16:21:37,837 - root - ERROR - Erro ao definir ícone no MensagemPopup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 16:21:37,843 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 16:21:37,843 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 16:21:37,843 - senha_controller - INFO - Senhas listadas com sucesso
+2025-01-01 16:21:37,859 - gerenciador_view - INFO - Lista atualizada com 2 senhas
+2025-01-01 16:21:46,121 - root - ERROR - Erro ao carregar ícone no popup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 16:21:46,124 - root - ERROR - Erro ao definir ícone no MensagemPopup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 16:21:46,127 - gerenciador_view - INFO - Senha copiado para área de transferência
+2025-01-01 16:22:03,552 - root - ERROR - Erro ao carregar ícone no popup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 16:22:03,554 - root - ERROR - Erro ao definir ícone no MensagemPopup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 16:31:15,296 - auth_controller - INFO - Logout realizado: Gabriel
+2025-01-01 16:31:29,140 - root - INFO - Sistema de logging iniciado com sucesso
+2025-01-01 16:31:29,141 - root - INFO - Logging iniciado com sucesso
+2025-01-01 16:31:29,223 - root - INFO - Tamanho da fonte alterado para: 13
+2025-01-01 16:31:29,224 - database - INFO - Tabelas criadas/verificadas com sucesso
+2025-01-01 16:31:29,301 - root - INFO - Procurando som em: C:\Users\mineg\Documents\felichia\codes\felichia\assets\sons\startup.wav
+2025-01-01 16:31:29,302 - root - INFO - Arquivo de som encontrado!
+2025-01-01 16:31:29,304 - root - INFO - Som iniciado com sucesso
+2025-01-01 16:31:41,775 - usuario_model - INFO - Usuário atualizado: Gabriel
+2025-01-01 16:31:41,786 - root - ERROR - Erro ao carregar ícone no popup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 16:31:41,787 - root - ERROR - Erro ao definir ícone no MensagemPopup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 16:31:46,453 - usuario_model - INFO - Usuário atualizado: Gabriel
+2025-01-01 16:31:46,456 - auth_controller - INFO - Login bem sucedido: Gabriel
+2025-01-01 16:31:46,582 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 16:31:46,583 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 16:31:46,583 - senha_controller - INFO - Senhas listadas com sucesso
+2025-01-01 16:31:46,601 - gerenciador_view - INFO - Lista atualizada com 2 senhas
+2025-01-01 16:31:51,671 - root - ERROR - Erro ao carregar ícone no popup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 16:31:51,674 - root - ERROR - Erro ao definir ícone no MensagemPopup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 16:31:53,338 - root - ERROR - Erro ao carregar ícone no popup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 16:31:53,340 - root - ERROR - Erro ao definir ícone no MensagemPopup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 16:40:02,827 - auth_controller - INFO - Logout realizado: Gabriel
+2025-01-01 16:40:14,400 - usuario_model - INFO - Usuário atualizado: Gabriel
+2025-01-01 16:40:14,403 - auth_controller - INFO - Login bem sucedido: Gabriel
+2025-01-01 16:40:14,509 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 16:40:14,510 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 16:40:14,511 - senha_controller - INFO - Senhas listadas com sucesso
+2025-01-01 16:40:14,524 - gerenciador_view - INFO - Lista atualizada com 2 senhas
+2025-01-01 16:40:17,350 - root - ERROR - Erro ao carregar ícone no popup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 16:40:21,069 - root - ERROR - Erro ao carregar ícone no popup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 16:40:21,070 - root - ERROR - Erro ao definir ícone no MensagemPopup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 16:40:21,077 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 16:40:21,077 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 16:40:21,078 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 16:40:21,078 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 16:40:21,079 - senha_controller - INFO - Senhas listadas com sucesso
+2025-01-01 16:40:21,116 - gerenciador_view - INFO - Lista atualizada com 4 senhas
+2025-01-01 16:40:45,337 - root - ERROR - Erro ao carregar ícone no popup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 16:40:45,339 - root - ERROR - Erro ao definir ícone no MensagemPopup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 16:40:45,343 - gerenciador_view - INFO - Senha copiado para área de transferência
+2025-01-01 16:40:47,327 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 16:40:47,328 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 16:40:47,328 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 16:40:47,328 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 16:40:47,329 - senha_controller - INFO - Senhas listadas com sucesso
+2025-01-01 16:40:47,391 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 16:40:47,392 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 16:40:47,393 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 16:40:47,393 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 16:40:47,393 - senha_controller - INFO - Senhas listadas com sucesso
+2025-01-01 16:40:48,503 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 16:40:48,504 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 16:40:48,506 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 16:40:48,506 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 16:40:48,506 - senha_controller - INFO - Senhas listadas com sucesso
+2025-01-01 16:40:48,535 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 16:40:48,535 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 16:40:48,536 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 16:40:48,536 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 16:40:48,537 - senha_controller - INFO - Senhas listadas com sucesso
+2025-01-01 16:40:48,975 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 16:40:48,976 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 16:40:48,977 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 16:40:48,977 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 16:40:48,977 - senha_controller - INFO - Senhas listadas com sucesso
+2025-01-01 16:40:55,510 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 16:40:55,513 - senha_model - INFO - Senha deletada para o site: a
+2025-01-01 16:40:55,515 - senha_controller - INFO - Senha removida para o site: a
+2025-01-01 16:40:55,523 - root - ERROR - Erro ao carregar ícone no popup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 16:40:55,525 - root - ERROR - Erro ao definir ícone no MensagemPopup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 16:40:55,532 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 16:40:55,532 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 16:40:55,532 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 16:40:55,533 - senha_controller - INFO - Senhas listadas com sucesso
+2025-01-01 16:40:55,578 - gerenciador_view - INFO - Lista atualizada com 3 senhas
+2025-01-01 16:40:57,321 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 16:40:57,323 - senha_model - INFO - Senha deletada para o site: a
+2025-01-01 16:40:57,325 - senha_controller - INFO - Senha removida para o site: a
+2025-01-01 16:40:57,333 - root - ERROR - Erro ao carregar ícone no popup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 16:40:57,335 - root - ERROR - Erro ao definir ícone no MensagemPopup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 16:40:57,342 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 16:40:57,342 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 16:40:57,342 - senha_controller - INFO - Senhas listadas com sucesso
+2025-01-01 16:40:57,376 - gerenciador_view - INFO - Lista atualizada com 2 senhas
+2025-01-01 16:40:59,106 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 16:40:59,109 - senha_model - INFO - Senha deletada para o site: a
+2025-01-01 16:40:59,111 - senha_controller - INFO - Senha removida para o site: a
+2025-01-01 16:40:59,119 - root - ERROR - Erro ao carregar ícone no popup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 16:40:59,120 - root - ERROR - Erro ao definir ícone no MensagemPopup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 16:40:59,127 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 16:40:59,128 - senha_controller - INFO - Senhas listadas com sucesso
+2025-01-01 16:40:59,148 - gerenciador_view - INFO - Lista atualizada com 1 senhas
+2025-01-01 16:41:00,669 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 16:41:00,673 - senha_model - INFO - Senha deletada para o site: a
+2025-01-01 16:41:00,676 - senha_controller - INFO - Senha removida para o site: a
+2025-01-01 16:41:00,685 - root - ERROR - Erro ao carregar ícone no popup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 16:41:00,687 - root - ERROR - Erro ao definir ícone no MensagemPopup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 16:41:00,693 - senha_controller - INFO - Senhas listadas com sucesso
+2025-01-01 16:41:00,702 - gerenciador_view - INFO - Lista atualizada - nenhuma senha encontrada
+2025-01-01 16:41:35,445 - auth_controller - INFO - Logout realizado: Gabriel
+2025-01-01 16:45:59,835 - root - INFO - Sistema de logging iniciado com sucesso
+2025-01-01 16:45:59,836 - root - INFO - Logging iniciado com sucesso
+2025-01-01 16:45:59,927 - root - INFO - Tamanho da fonte alterado para: 13
+2025-01-01 16:45:59,929 - database - INFO - Tabelas criadas/verificadas com sucesso
+2025-01-01 16:46:00,001 - root - INFO - Procurando som em: C:\Users\mineg\Documents\felichia\codes\felichia\assets\sons\startup.wav
+2025-01-01 16:46:00,002 - root - INFO - Arquivo de som encontrado!
+2025-01-01 16:46:00,005 - root - INFO - Som iniciado com sucesso
+2025-01-01 16:46:14,116 - usuario_model - INFO - Usuário atualizado: Gabriel
+2025-01-01 16:46:14,118 - auth_controller - INFO - Login bem sucedido: Gabriel
+2025-01-01 16:46:14,260 - senha_controller - INFO - Senhas listadas com sucesso
+2025-01-01 16:46:14,261 - gerenciador_view - INFO - Lista atualizada - nenhuma senha encontrada
+2025-01-01 16:46:15,653 - root - ERROR - Erro ao carregar ícone no popup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 16:46:17,602 - root - ERROR - Erro ao carregar ícone no popup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 16:46:20,693 - root - ERROR - Erro ao carregar ícone no popup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 16:46:20,696 - root - ERROR - Erro ao definir ícone no MensagemPopup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 16:46:20,701 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 16:46:20,702 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 16:46:20,702 - senha_controller - INFO - Senhas listadas com sucesso
+2025-01-01 16:46:20,722 - gerenciador_view - INFO - Lista atualizada com 2 senhas
+2025-01-01 16:46:25,219 - root - ERROR - Erro ao carregar ícone no popup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 16:46:25,221 - root - ERROR - Erro ao definir ícone no MensagemPopup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 16:46:29,185 - root - ERROR - Erro ao carregar ícone no popup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 16:46:29,186 - root - ERROR - Erro ao definir ícone no MensagemPopup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 16:48:56,902 - root - ERROR - Erro ao carregar ícone no popup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 16:48:56,903 - root - ERROR - Erro ao definir ícone no MensagemPopup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 16:48:59,378 - root - ERROR - Erro ao carregar ícone no popup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 16:48:59,380 - root - ERROR - Erro ao definir ícone no MensagemPopup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 16:49:34,518 - root - ERROR - Erro ao carregar ícone no popup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 16:49:34,519 - root - ERROR - Erro ao definir ícone no MensagemPopup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 16:49:39,662 - root - ERROR - Erro ao carregar ícone no popup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 16:49:39,665 - root - ERROR - Erro ao definir ícone no MensagemPopup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 17:06:34,247 - root - ERROR - Erro ao carregar ícone no popup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 17:06:34,249 - root - ERROR - Erro ao definir ícone no MensagemPopup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 17:09:50,914 - auth_controller - INFO - Logout realizado: Gabriel
+2025-01-01 17:10:02,587 - root - INFO - Sistema de logging iniciado com sucesso
+2025-01-01 17:10:02,587 - root - INFO - Logging iniciado com sucesso
+2025-01-01 17:10:02,674 - root - INFO - Tamanho da fonte alterado para: 13
+2025-01-01 17:10:02,676 - database - INFO - Tabelas criadas/verificadas com sucesso
+2025-01-01 17:10:02,750 - root - INFO - Procurando som em: C:\Users\mineg\Documents\felichia\codes\felichia\assets\sons\startup.wav
+2025-01-01 17:10:02,751 - root - INFO - Arquivo de som encontrado!
+2025-01-01 17:10:02,752 - root - INFO - Som iniciado com sucesso
+2025-01-01 17:10:13,880 - usuario_model - INFO - Usuário atualizado: Gabriel
+2025-01-01 17:10:13,882 - auth_controller - INFO - Login bem sucedido: Gabriel
+2025-01-01 17:10:14,014 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 17:10:14,015 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 17:10:14,015 - senha_controller - INFO - Senhas listadas com sucesso
+2025-01-01 17:10:14,031 - gerenciador_view - INFO - Lista atualizada com 2 senhas
+2025-01-01 17:10:17,495 - root - ERROR - Erro ao carregar ícone no popup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 17:10:17,497 - root - ERROR - Erro ao definir ícone no MensagemPopup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 17:10:19,901 - root - ERROR - Erro ao carregar ícone no popup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 17:10:19,903 - root - ERROR - Erro ao definir ícone no MensagemPopup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 17:10:21,259 - root - ERROR - Erro ao carregar ícone no popup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 17:10:21,262 - root - ERROR - Erro ao definir ícone no MensagemPopup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 17:10:22,872 - root - ERROR - Erro ao carregar ícone no popup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 17:10:22,873 - root - ERROR - Erro ao definir ícone no MensagemPopup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 17:10:27,284 - root - ERROR - Erro ao carregar ícone no popup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 17:10:27,285 - root - ERROR - Erro ao definir ícone no MensagemPopup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 17:14:41,778 - root - ERROR - Erro ao carregar ícone no popup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 17:14:41,779 - root - ERROR - Erro ao definir ícone no MensagemPopup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 17:14:42,946 - root - ERROR - Erro ao carregar ícone no popup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 17:14:42,948 - root - ERROR - Erro ao definir ícone no MensagemPopup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 17:14:45,211 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 17:14:45,212 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 17:14:45,212 - senha_controller - INFO - Senhas listadas com sucesso
+2025-01-01 17:14:45,257 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 17:14:45,257 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 17:14:45,257 - senha_controller - INFO - Senhas listadas com sucesso
+2025-01-01 17:20:11,827 - auth_controller - INFO - Logout realizado: Gabriel
+2025-01-01 17:21:43,777 - root - INFO - Sistema de logging iniciado com sucesso
+2025-01-01 17:21:43,778 - root - INFO - Logging iniciado com sucesso
+2025-01-01 17:21:43,856 - root - INFO - Tamanho da fonte alterado para: 13
+2025-01-01 17:21:43,859 - database - INFO - Tabelas criadas/verificadas com sucesso
+2025-01-01 17:21:43,928 - root - INFO - Procurando som em: C:\Users\mineg\Documents\felichia\codes\felichia\assets\sons\startup.wav
+2025-01-01 17:21:43,928 - root - INFO - Arquivo de som encontrado!
+2025-01-01 17:21:43,930 - root - INFO - Som iniciado com sucesso
+2025-01-01 17:26:41,307 - usuario_model - INFO - Usuário atualizado: Gabriel
+2025-01-01 17:26:41,317 - root - ERROR - Erro ao carregar ícone no popup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 17:26:41,319 - root - ERROR - Erro ao definir ícone no MensagemPopup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 17:26:47,003 - usuario_model - INFO - Usuário atualizado: Gabriel
+2025-01-01 17:26:47,005 - auth_controller - INFO - Login bem sucedido: Gabriel
+2025-01-01 17:26:47,132 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 17:26:47,133 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 17:26:47,133 - senha_controller - INFO - Senhas listadas com sucesso
+2025-01-01 17:26:47,149 - gerenciador_view - INFO - Lista atualizada com 2 senhas
+2025-01-01 17:26:49,990 - root - ERROR - Erro ao carregar ícone no popup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 17:26:49,994 - root - ERROR - Erro ao definir ícone no MensagemPopup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 17:26:54,691 - root - ERROR - Erro ao carregar ícone no popup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 17:26:54,694 - root - ERROR - Erro ao definir ícone no MensagemPopup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 17:26:55,501 - root - ERROR - Erro ao carregar ícone no popup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 17:26:55,503 - root - ERROR - Erro ao definir ícone no MensagemPopup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 17:26:59,123 - root - ERROR - Erro ao carregar ícone no popup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 17:26:59,126 - root - ERROR - Erro ao definir ícone no MensagemPopup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 17:27:03,192 - root - ERROR - Erro ao carregar ícone no popup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 17:27:03,194 - root - ERROR - Erro ao definir ícone no MensagemPopup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 17:27:06,139 - root - ERROR - Erro ao carregar ícone no popup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 17:27:06,141 - root - ERROR - Erro ao definir ícone no MensagemPopup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 17:27:08,889 - root - ERROR - Erro ao carregar ícone no popup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 17:27:08,890 - root - ERROR - Erro ao definir ícone no MensagemPopup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 17:27:13,690 - root - ERROR - Erro ao carregar ícone no popup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 17:27:13,692 - root - ERROR - Erro ao definir ícone no MensagemPopup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 17:27:17,791 - root - ERROR - Erro ao carregar ícone no popup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 17:27:17,793 - root - ERROR - Erro ao definir ícone no MensagemPopup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 17:27:24,188 - root - ERROR - Erro ao carregar ícone no popup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 17:27:24,189 - root - ERROR - Erro ao definir ícone no MensagemPopup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 17:27:25,744 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 17:27:25,745 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 17:27:25,745 - senha_controller - INFO - Senhas listadas com sucesso
+2025-01-01 17:27:43,721 - root - ERROR - Erro ao carregar ícone no popup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 17:27:43,724 - root - ERROR - Erro ao definir ícone no MensagemPopup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 17:27:45,037 - root - ERROR - Erro ao carregar ícone no popup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 17:27:45,039 - root - ERROR - Erro ao definir ícone no MensagemPopup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 17:27:46,569 - root - ERROR - Erro ao carregar ícone no popup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 17:27:46,571 - root - ERROR - Erro ao definir ícone no MensagemPopup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 17:27:47,375 - root - ERROR - Erro ao carregar ícone no popup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 17:27:47,377 - root - ERROR - Erro ao definir ícone no MensagemPopup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 17:27:48,978 - root - ERROR - Erro ao carregar ícone no popup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 17:27:48,980 - root - ERROR - Erro ao definir ícone no MensagemPopup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 17:29:39,095 - root - ERROR - Erro ao carregar ícone no popup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 17:29:39,097 - root - ERROR - Erro ao definir ícone no MensagemPopup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 17:31:01,173 - root - ERROR - Erro ao carregar ícone no popup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 17:31:01,174 - root - ERROR - Erro ao definir ícone no MensagemPopup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 17:31:08,809 - root - ERROR - Erro ao carregar ícone no popup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 17:31:08,812 - root - ERROR - Erro ao definir ícone no MensagemPopup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 17:31:26,392 - root - ERROR - Erro ao carregar ícone no popup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 17:31:26,395 - root - ERROR - Erro ao definir ícone no MensagemPopup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 17:31:28,120 - auth_controller - INFO - Logout realizado: Gabriel
+2025-01-01 17:34:23,717 - root - INFO - Sistema de logging iniciado com sucesso
+2025-01-01 17:34:23,717 - root - INFO - Logging iniciado com sucesso
+2025-01-01 17:34:23,808 - root - INFO - Tamanho da fonte alterado para: 13
+2025-01-01 17:34:23,810 - database - INFO - Tabelas criadas/verificadas com sucesso
+2025-01-01 17:34:23,885 - root - INFO - Procurando som em: C:\Users\mineg\Documents\felichia\codes\felichia\assets\sons\startup.wav
+2025-01-01 17:34:23,886 - root - INFO - Arquivo de som encontrado!
+2025-01-01 17:34:23,887 - root - INFO - Som iniciado com sucesso
+2025-01-01 17:34:35,680 - usuario_model - INFO - Usuário atualizado: Gabriel
+2025-01-01 17:34:35,682 - auth_controller - INFO - Login bem sucedido: Gabriel
+2025-01-01 17:34:35,822 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 17:34:35,823 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 17:34:35,824 - senha_controller - INFO - Senhas listadas com sucesso
+2025-01-01 17:34:35,841 - gerenciador_view - INFO - Lista atualizada com 2 senhas
+2025-01-01 17:34:45,185 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 17:34:45,188 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 17:34:45,189 - senha_model - INFO - Senha atualizada para o site: a
+2025-01-01 17:34:45,190 - senha_controller - INFO - Senha alterada para o site: a
+2025-01-01 17:34:45,206 - root - ERROR - Erro ao carregar ícone no popup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 17:34:45,207 - root - ERROR - Erro ao definir ícone no MensagemPopup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 17:34:45,212 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 17:34:45,213 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 17:34:45,213 - senha_controller - INFO - Senhas listadas com sucesso
+2025-01-01 17:34:45,242 - gerenciador_view - INFO - Lista atualizada com 2 senhas
+2025-01-01 17:34:47,747 - root - ERROR - Erro ao carregar ícone no popup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 17:34:53,072 - backup_service - INFO - Backup exportado com sucesso para: C:/Users/mineg/Desktop/13.json
+2025-01-01 17:34:53,083 - root - ERROR - Erro ao carregar ícone no popup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 17:34:53,085 - root - ERROR - Erro ao definir ícone no MensagemPopup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 17:34:56,005 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 17:34:56,007 - senha_model - INFO - Senha deletada para o site: a
+2025-01-01 17:34:56,009 - senha_controller - INFO - Senha removida para o site: a
+2025-01-01 17:34:56,018 - root - ERROR - Erro ao carregar ícone no popup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 17:34:56,019 - root - ERROR - Erro ao definir ícone no MensagemPopup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 17:34:56,024 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 17:34:56,026 - senha_controller - INFO - Senhas listadas com sucesso
+2025-01-01 17:34:56,049 - gerenciador_view - INFO - Lista atualizada com 1 senhas
+2025-01-01 17:34:57,457 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 17:34:57,460 - senha_model - INFO - Senha deletada para o site: a
+2025-01-01 17:34:57,462 - senha_controller - INFO - Senha removida para o site: a
+2025-01-01 17:34:57,471 - root - ERROR - Erro ao carregar ícone no popup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 17:34:57,472 - root - ERROR - Erro ao definir ícone no MensagemPopup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 17:34:57,478 - senha_controller - INFO - Senhas listadas com sucesso
+2025-01-01 17:34:57,486 - gerenciador_view - INFO - Lista atualizada - nenhuma senha encontrada
+2025-01-01 17:34:58,663 - root - ERROR - Erro ao carregar ícone no popup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 17:35:01,269 - root - ERROR - Erro ao carregar ícone no popup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 17:35:01,271 - root - ERROR - Erro ao definir ícone no MensagemPopup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 17:35:01,277 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 17:35:01,277 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 17:35:01,277 - senha_controller - INFO - Senhas listadas com sucesso
+2025-01-01 17:35:01,291 - gerenciador_view - INFO - Lista atualizada com 2 senhas
+2025-01-01 17:35:07,023 - root - ERROR - Erro ao carregar ícone no popup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 17:35:07,025 - root - ERROR - Erro ao definir ícone no MensagemPopup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 17:35:07,032 - gerenciador_view - INFO - Senha copiado para área de transferência
+2025-01-01 17:35:09,148 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 17:35:09,148 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 17:35:09,150 - senha_controller - INFO - Senhas listadas com sucesso
+2025-01-01 17:35:09,262 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 17:35:09,263 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 17:35:09,263 - senha_controller - INFO - Senhas listadas com sucesso
+2025-01-01 17:35:10,163 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 17:35:10,165 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 17:35:10,165 - senha_controller - INFO - Senhas listadas com sucesso
+2025-01-01 17:35:10,264 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 17:35:10,266 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 17:35:10,266 - senha_controller - INFO - Senhas listadas com sucesso
+2025-01-01 17:35:12,196 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 17:35:12,197 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 17:35:12,197 - senha_controller - INFO - Senhas listadas com sucesso
+2025-01-01 17:35:14,922 - root - ERROR - Erro ao carregar ícone no popup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 17:35:14,923 - root - ERROR - Erro ao definir ícone no MensagemPopup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 17:35:14,928 - gerenciador_view - INFO - Senha copiado para área de transferência
+2025-01-01 17:35:16,845 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 17:35:16,846 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 17:35:16,847 - senha_controller - INFO - Senhas listadas com sucesso
+2025-01-01 17:35:16,940 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 17:35:16,941 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 17:35:16,941 - senha_controller - INFO - Senhas listadas com sucesso
+2025-01-01 17:35:17,631 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 17:35:17,632 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 17:35:17,632 - senha_controller - INFO - Senhas listadas com sucesso
+2025-01-01 17:35:17,709 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 17:35:17,710 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 17:35:17,710 - senha_controller - INFO - Senhas listadas com sucesso
+2025-01-01 17:35:18,767 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 17:35:18,768 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 17:35:18,768 - senha_controller - INFO - Senhas listadas com sucesso
+2025-01-01 17:41:07,843 - auth_controller - INFO - Logout realizado: Gabriel
+2025-01-01 22:58:05,597 - root - INFO - Sistema de logging iniciado com sucesso
+2025-01-01 22:59:26,578 - root - INFO - Sistema de logging iniciado com sucesso
+2025-01-01 23:01:22,062 - root - INFO - Sistema de logging iniciado com sucesso
+2025-01-01 23:02:45,460 - root - INFO - Sistema de logging iniciado com sucesso
+2025-01-01 23:02:45,461 - root - INFO - Logging iniciado com sucesso
+2025-01-01 23:02:45,545 - root - INFO - Tamanho da fonte alterado para: 13
+2025-01-01 23:02:45,547 - database - INFO - Tabelas criadas/verificadas com sucesso
+2025-01-01 23:02:45,702 - root - INFO - Procurando som em: C:\Users\mineg\Documents\felichia\codes\felichia\assets\sons\startup.wav
+2025-01-01 23:02:45,702 - root - INFO - Arquivo de som encontrado!
+2025-01-01 23:02:45,704 - root - INFO - Som iniciado com sucesso
+2025-01-01 23:02:53,078 - usuario_model - INFO - Usuário atualizado: Gabriel
+2025-01-01 23:02:53,087 - root - ERROR - Erro ao carregar ícone no popup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 23:02:53,089 - root - ERROR - Erro ao definir ícone no MensagemPopup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 23:02:55,782 - usuario_model - INFO - Usuário atualizado: Gabriel
+2025-01-01 23:02:55,784 - auth_controller - INFO - Login bem sucedido: Gabriel
+2025-01-01 23:02:55,948 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 23:02:55,948 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 23:02:55,948 - senha_controller - INFO - Senhas listadas com sucesso
+2025-01-01 23:02:55,964 - gerenciador_view - INFO - Lista atualizada com 2 senhas
+2025-01-01 23:02:57,495 - root - ERROR - Erro ao carregar ícone no popup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 23:03:02,238 - root - ERROR - Erro ao carregar ícone no popup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 23:03:02,240 - root - ERROR - Erro ao definir ícone no MensagemPopup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 23:03:02,245 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 23:03:02,245 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 23:03:02,245 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 23:03:02,245 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 23:03:02,247 - senha_controller - INFO - Senhas listadas com sucesso
+2025-01-01 23:03:02,280 - gerenciador_view - INFO - Lista atualizada com 4 senhas
+2025-01-01 23:03:06,281 - root - ERROR - Erro ao carregar ícone no popup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 23:03:06,283 - root - ERROR - Erro ao definir ícone no MensagemPopup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 23:03:06,288 - gerenciador_view - INFO - Senha copiado para área de transferência
+2025-01-01 23:03:08,406 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 23:03:08,407 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 23:03:08,408 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 23:03:08,408 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 23:03:08,408 - senha_controller - INFO - Senhas listadas com sucesso
+2025-01-01 23:03:08,463 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 23:03:08,464 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 23:03:08,465 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 23:03:08,465 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 23:03:08,465 - senha_controller - INFO - Senhas listadas com sucesso
+2025-01-01 23:03:10,038 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 23:03:10,040 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 23:03:10,040 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 23:03:10,040 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 23:03:10,040 - senha_controller - INFO - Senhas listadas com sucesso
+2025-01-01 23:03:10,803 - auth_controller - INFO - Logout realizado: Gabriel
+2025-01-01 23:15:01,680 - root - INFO - Sistema de logging iniciado com sucesso
+2025-01-01 23:17:09,462 - root - INFO - Sistema de logging iniciado com sucesso
+2025-01-01 23:17:09,462 - root - INFO - Logging iniciado com sucesso
+2025-01-01 23:17:09,540 - root - INFO - Tamanho da fonte alterado para: 13
+2025-01-01 23:17:09,542 - database - INFO - Tabelas criadas/verificadas com sucesso
+2025-01-01 23:17:09,612 - root - INFO - Procurando som em: C:\Users\mineg\Documents\felichia\codes\felichia\assets\sons\startup.wav
+2025-01-01 23:17:09,613 - root - INFO - Arquivo de som encontrado!
+2025-01-01 23:17:09,615 - root - INFO - Som iniciado com sucesso
+2025-01-01 23:17:16,563 - usuario_model - INFO - Usuário atualizado: Gabriel
+2025-01-01 23:17:16,564 - auth_controller - INFO - Login bem sucedido: Gabriel
+2025-01-01 23:17:16,673 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 23:17:16,675 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 23:17:16,675 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 23:17:16,676 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 23:17:16,676 - senha_controller - INFO - Senhas listadas com sucesso
+2025-01-01 23:17:16,701 - gerenciador_view - INFO - Lista atualizada com 4 senhas
+2025-01-01 23:17:18,384 - root - ERROR - Erro ao carregar ícone no popup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 23:17:20,323 - root - ERROR - Erro ao carregar ícone no popup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 23:17:23,288 - root - ERROR - Erro ao carregar ícone no popup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 23:17:23,289 - root - ERROR - Erro ao definir ícone no MensagemPopup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 23:17:23,295 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 23:17:23,296 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 23:17:23,296 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 23:17:23,297 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 23:17:23,297 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 23:17:23,298 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 23:17:23,298 - senha_controller - INFO - Senhas listadas com sucesso
+2025-01-01 23:17:23,350 - gerenciador_view - INFO - Lista atualizada com 6 senhas
+2025-01-01 23:17:27,092 - root - ERROR - Erro ao carregar ícone no popup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 23:17:27,094 - root - ERROR - Erro ao definir ícone no MensagemPopup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 23:17:27,096 - gerenciador_view - INFO - Senha copiado para área de transferência
+2025-01-01 23:17:29,802 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 23:17:29,803 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 23:17:29,803 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 23:17:29,804 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 23:17:29,804 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 23:17:29,804 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 23:17:29,805 - senha_controller - INFO - Senhas listadas com sucesso
+2025-01-01 23:17:29,898 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 23:17:29,899 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 23:17:29,900 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 23:17:29,900 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 23:17:29,901 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 23:17:29,901 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 23:17:29,901 - senha_controller - INFO - Senhas listadas com sucesso
+2025-01-01 23:17:31,338 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 23:17:31,339 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 23:17:31,339 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 23:17:31,339 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 23:17:31,340 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 23:17:31,340 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 23:17:31,341 - senha_controller - INFO - Senhas listadas com sucesso
+2025-01-01 23:17:40,563 - auth_controller - INFO - Logout realizado: Gabriel
+2025-01-01 23:18:05,749 - root - INFO - Sistema de logging iniciado com sucesso
+2025-01-01 23:18:05,750 - root - INFO - Logging iniciado com sucesso
+2025-01-01 23:18:05,821 - root - INFO - Tamanho da fonte alterado para: 13
+2025-01-01 23:18:05,822 - database - INFO - Tabelas criadas/verificadas com sucesso
+2025-01-01 23:18:05,893 - root - INFO - Procurando som em: C:\Users\mineg\Documents\felichia\codes\felichia\assets\sons\startup.wav
+2025-01-01 23:18:05,893 - root - INFO - Arquivo de som encontrado!
+2025-01-01 23:18:05,895 - root - INFO - Som iniciado com sucesso
+2025-01-01 23:18:15,521 - usuario_model - INFO - Usuário atualizado: Gabriel
+2025-01-01 23:18:15,524 - auth_controller - INFO - Login bem sucedido: Gabriel
+2025-01-01 23:18:15,646 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 23:18:15,647 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 23:18:15,647 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 23:18:15,647 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 23:18:15,648 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 23:18:15,648 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 23:18:15,649 - senha_controller - INFO - Senhas listadas com sucesso
+2025-01-01 23:18:15,687 - gerenciador_view - INFO - Lista atualizada com 6 senhas
+2025-01-01 23:18:16,477 - root - ERROR - Erro ao carregar ícone no popup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 23:18:19,740 - root - ERROR - Erro ao carregar ícone no popup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 23:18:19,742 - root - ERROR - Erro ao definir ícone no MensagemPopup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 23:18:19,748 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 23:18:19,748 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 23:18:19,749 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 23:18:19,749 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 23:18:19,749 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 23:18:19,750 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 23:18:19,750 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 23:18:19,751 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 23:18:19,751 - senha_controller - INFO - Senhas listadas com sucesso
+2025-01-01 23:18:19,823 - gerenciador_view - INFO - Lista atualizada com 8 senhas
+2025-01-01 23:18:23,856 - root - ERROR - Erro ao carregar ícone no popup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 23:18:23,857 - root - ERROR - Erro ao definir ícone no MensagemPopup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 23:18:26,337 - root - ERROR - Erro ao carregar ícone no popup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 23:18:26,338 - root - ERROR - Erro ao definir ícone no MensagemPopup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 23:18:26,343 - gerenciador_view - INFO - Senha copiado para área de transferência
+2025-01-01 23:18:27,878 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 23:18:27,879 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 23:18:27,880 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 23:18:27,881 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 23:18:27,881 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 23:18:27,881 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 23:18:27,882 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 23:18:27,882 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 23:18:27,882 - senha_controller - INFO - Senhas listadas com sucesso
+2025-01-01 23:18:27,942 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 23:18:27,943 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 23:18:27,944 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 23:18:27,944 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 23:18:27,945 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 23:18:27,945 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 23:18:27,945 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 23:18:27,946 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 23:18:27,946 - senha_controller - INFO - Senhas listadas com sucesso
+2025-01-01 23:18:29,526 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 23:18:29,527 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 23:18:29,527 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 23:18:29,527 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 23:18:29,527 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 23:18:29,529 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 23:18:29,529 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 23:18:29,530 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 23:18:29,530 - senha_controller - INFO - Senhas listadas com sucesso
+2025-01-01 23:21:09,618 - auth_controller - INFO - Logout realizado: Gabriel
+2025-01-01 23:28:31,229 - root - INFO - Sistema de logging iniciado com sucesso
+2025-01-01 23:28:31,230 - root - INFO - Logging iniciado com sucesso
+2025-01-01 23:28:31,303 - root - INFO - Tamanho da fonte alterado para: 13
+2025-01-01 23:28:31,305 - database - INFO - Tabelas criadas/verificadas com sucesso
+2025-01-01 23:28:31,375 - root - INFO - Procurando som em: C:\Users\mineg\Documents\felichia\codes\felichia\assets\sons\startup.wav
+2025-01-01 23:28:31,376 - root - INFO - Arquivo de som encontrado!
+2025-01-01 23:28:31,378 - root - INFO - Som iniciado com sucesso
+2025-01-01 23:28:51,485 - usuario_model - INFO - Usuário atualizado: Gabriel
+2025-01-01 23:28:51,487 - auth_controller - INFO - Login bem sucedido: Gabriel
+2025-01-01 23:28:51,601 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 23:28:51,602 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 23:28:51,602 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 23:28:51,603 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 23:28:51,603 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 23:28:51,604 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 23:28:51,604 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 23:28:51,604 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 23:28:51,605 - senha_controller - INFO - Senhas listadas com sucesso
+2025-01-01 23:28:51,656 - gerenciador_view - INFO - Lista atualizada com 8 senhas
+2025-01-01 23:28:53,118 - root - ERROR - Erro ao carregar ícone no popup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 23:28:55,180 - auth_controller - INFO - Logout realizado: Gabriel
+2025-01-01 23:29:30,652 - root - INFO - Sistema de logging iniciado com sucesso
+2025-01-01 23:29:30,653 - root - INFO - Logging iniciado com sucesso
+2025-01-01 23:29:30,725 - root - INFO - Tamanho da fonte alterado para: 13
+2025-01-01 23:29:30,727 - database - INFO - Tabelas criadas/verificadas com sucesso
+2025-01-01 23:29:30,798 - root - INFO - Procurando som em: C:\Users\mineg\Documents\felichia\codes\felichia\assets\sons\startup.wav
+2025-01-01 23:29:30,800 - root - INFO - Arquivo de som encontrado!
+2025-01-01 23:29:30,802 - root - INFO - Som iniciado com sucesso
+2025-01-01 23:29:42,760 - usuario_model - INFO - Usuário atualizado: Gabriel
+2025-01-01 23:29:42,762 - auth_controller - INFO - Login bem sucedido: Gabriel
+2025-01-01 23:29:42,878 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 23:29:42,879 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 23:29:42,879 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 23:29:42,880 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 23:29:42,880 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 23:29:42,881 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 23:29:42,881 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 23:29:42,881 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 23:29:42,882 - senha_controller - INFO - Senhas listadas com sucesso
+2025-01-01 23:29:42,931 - gerenciador_view - INFO - Lista atualizada com 8 senhas
+2025-01-01 23:29:43,526 - root - ERROR - Erro ao carregar ícone no popup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 23:39:25,778 - auth_controller - INFO - Logout realizado: Gabriel
+2025-01-01 23:40:37,735 - root - INFO - Sistema de logging iniciado com sucesso
+2025-01-01 23:40:37,736 - root - INFO - Logging iniciado com sucesso
+2025-01-01 23:40:37,805 - root - INFO - Tamanho da fonte alterado para: 13
+2025-01-01 23:40:37,806 - database - INFO - Tabelas criadas/verificadas com sucesso
+2025-01-01 23:40:37,875 - root - INFO - Procurando som em: C:\Users\mineg\Documents\felichia\codes\felichia\assets\sons\startup.wav
+2025-01-01 23:40:37,876 - root - INFO - Arquivo de som encontrado!
+2025-01-01 23:40:37,878 - root - INFO - Som iniciado com sucesso
+2025-01-01 23:41:10,573 - usuario_model - INFO - Usuário atualizado: Gabriel
+2025-01-01 23:41:10,575 - auth_controller - INFO - Login bem sucedido: Gabriel
+2025-01-01 23:41:10,703 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 23:41:10,704 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 23:41:10,704 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 23:41:10,705 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 23:41:10,705 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 23:41:10,705 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 23:41:10,706 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 23:41:10,706 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 23:41:10,706 - senha_controller - INFO - Senhas listadas com sucesso
+2025-01-01 23:41:10,754 - gerenciador_view - INFO - Lista atualizada com 8 senhas
+2025-01-01 23:41:12,799 - root - ERROR - Erro ao carregar ícone no popup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 23:41:15,435 - root - ERROR - Erro ao carregar ícone no popup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 23:42:16,927 - root - ERROR - Erro ao carregar ícone no popup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 23:42:18,694 - auth_controller - INFO - Logout realizado: Gabriel
+2025-01-01 23:42:23,791 - root - INFO - Sistema de logging iniciado com sucesso
+2025-01-01 23:42:23,792 - root - INFO - Logging iniciado com sucesso
+2025-01-01 23:42:23,863 - root - INFO - Tamanho da fonte alterado para: 13
+2025-01-01 23:42:23,864 - database - INFO - Tabelas criadas/verificadas com sucesso
+2025-01-01 23:42:23,933 - root - INFO - Procurando som em: C:\Users\mineg\Documents\felichia\codes\felichia\assets\sons\startup.wav
+2025-01-01 23:42:23,934 - root - INFO - Arquivo de som encontrado!
+2025-01-01 23:42:23,937 - root - INFO - Som iniciado com sucesso
+2025-01-01 23:42:37,385 - usuario_model - INFO - Usuário atualizado: Gabriel
+2025-01-01 23:42:37,387 - auth_controller - INFO - Login bem sucedido: Gabriel
+2025-01-01 23:42:37,510 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 23:42:37,510 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 23:42:37,511 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 23:42:37,511 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 23:42:37,512 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 23:42:37,512 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 23:42:37,512 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 23:42:37,513 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 23:42:37,513 - senha_controller - INFO - Senhas listadas com sucesso
+2025-01-01 23:42:37,562 - gerenciador_view - INFO - Lista atualizada com 8 senhas
+2025-01-01 23:42:38,594 - root - ERROR - Erro ao carregar ícone no popup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 23:42:54,783 - auth_controller - INFO - Logout realizado: Gabriel
+2025-01-01 23:43:16,204 - root - INFO - Sistema de logging iniciado com sucesso
+2025-01-01 23:43:16,205 - root - INFO - Logging iniciado com sucesso
+2025-01-01 23:43:16,274 - root - INFO - Tamanho da fonte alterado para: 13
+2025-01-01 23:43:16,275 - database - INFO - Tabelas criadas/verificadas com sucesso
+2025-01-01 23:43:16,344 - root - INFO - Procurando som em: C:\Users\mineg\Documents\felichia\codes\felichia\assets\sons\startup.wav
+2025-01-01 23:43:16,344 - root - INFO - Arquivo de som encontrado!
+2025-01-01 23:43:16,346 - root - INFO - Som iniciado com sucesso
+2025-01-01 23:43:29,492 - usuario_model - INFO - Usuário atualizado: Gabriel
+2025-01-01 23:43:29,503 - root - ERROR - Erro ao carregar ícone no popup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 23:43:29,504 - root - ERROR - Erro ao definir ícone no MensagemPopup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 23:43:33,156 - usuario_model - INFO - Usuário atualizado: Gabriel
+2025-01-01 23:43:33,163 - root - ERROR - Erro ao carregar ícone no popup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 23:43:33,164 - root - ERROR - Erro ao definir ícone no MensagemPopup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 23:43:36,633 - auth_controller - WARNING - Usuário bloqueado após 3 tentativas: Gabriel
+2025-01-01 23:43:36,637 - usuario_model - INFO - Usuário atualizado: Gabriel
+2025-01-01 23:43:36,643 - root - ERROR - Erro ao carregar ícone no popup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 23:43:36,645 - root - ERROR - Erro ao definir ícone no MensagemPopup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 23:43:46,929 - auth_controller - ERROR - Erro no login: '>' not supported between instances of 'str' and 'datetime.datetime'
+2025-01-01 23:43:46,937 - root - ERROR - Erro ao carregar ícone no popup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 23:43:46,939 - root - ERROR - Erro ao definir ícone no MensagemPopup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 23:43:49,366 - auth_controller - ERROR - Erro no login: '>' not supported between instances of 'str' and 'datetime.datetime'
+2025-01-01 23:43:49,373 - root - ERROR - Erro ao carregar ícone no popup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 23:43:49,375 - root - ERROR - Erro ao definir ícone no MensagemPopup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 23:43:53,255 - auth_controller - ERROR - Erro no login: '>' not supported between instances of 'str' and 'datetime.datetime'
+2025-01-01 23:43:53,263 - root - ERROR - Erro ao carregar ícone no popup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 23:43:53,264 - root - ERROR - Erro ao definir ícone no MensagemPopup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 23:44:13,090 - root - INFO - Sistema de logging iniciado com sucesso
+2025-01-01 23:44:13,091 - root - INFO - Logging iniciado com sucesso
+2025-01-01 23:44:13,163 - root - INFO - Tamanho da fonte alterado para: 13
+2025-01-01 23:44:13,165 - database - INFO - Tabelas criadas/verificadas com sucesso
+2025-01-01 23:44:13,241 - root - INFO - Procurando som em: C:\Users\mineg\Documents\felichia\codes\felichia\assets\sons\startup.wav
+2025-01-01 23:44:13,242 - root - INFO - Arquivo de som encontrado!
+2025-01-01 23:44:13,243 - root - INFO - Som iniciado com sucesso
+2025-01-01 23:44:22,172 - auth_controller - ERROR - Erro no login: '>' not supported between instances of 'str' and 'datetime.datetime'
+2025-01-01 23:44:22,181 - root - ERROR - Erro ao carregar ícone no popup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 23:44:22,183 - root - ERROR - Erro ao definir ícone no MensagemPopup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 23:52:36,024 - root - INFO - Sistema de logging iniciado com sucesso
+2025-01-01 23:52:36,025 - root - INFO - Logging iniciado com sucesso
+2025-01-01 23:52:36,094 - root - INFO - Tamanho da fonte alterado para: 13
+2025-01-01 23:52:36,095 - database - INFO - Tabelas criadas/verificadas com sucesso
+2025-01-01 23:52:36,165 - root - INFO - Procurando som em: C:\Users\mineg\Documents\felichia\codes\felichia\assets\sons\startup.wav
+2025-01-01 23:52:36,166 - root - INFO - Arquivo de som encontrado!
+2025-01-01 23:52:36,168 - root - INFO - Som iniciado com sucesso
+2025-01-01 23:52:46,473 - auth_controller - ERROR - Erro no login: '>' not supported between instances of 'str' and 'datetime.datetime'
+2025-01-01 23:52:46,482 - root - ERROR - Erro ao carregar ícone no popup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 23:52:46,483 - root - ERROR - Erro ao definir ícone no MensagemPopup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\Felichia_logo.ico" not defined
+2025-01-01 23:53:47,295 - root - ERROR - Erro ao carregar ícone no popup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 23:53:47,297 - root - ERROR - Erro ao definir ícone no MensagemPopup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\Felichia_logo.ico" not defined
+2025-01-01 23:53:55,560 - usuario_model - INFO - Novo usuário criado: aws
+2025-01-01 23:53:55,562 - auth_controller - INFO - Novo usuário cadastrado: aws
+2025-01-01 23:53:55,569 - root - ERROR - Erro ao carregar ícone no popup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 23:53:55,569 - root - ERROR - Erro ao definir ícone no MensagemPopup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\Felichia_logo.ico" not defined
+2025-01-01 23:53:58,801 - usuario_model - INFO - Usuário atualizado: aws
+2025-01-01 23:53:58,802 - auth_controller - INFO - Login bem sucedido: aws
+2025-01-01 23:53:58,936 - senha_controller - INFO - Senhas listadas com sucesso
+2025-01-01 23:53:58,937 - gerenciador_view - INFO - Lista atualizada - nenhuma senha encontrada
+2025-01-01 23:54:09,218 - auth_controller - INFO - Logout realizado: aws
+2025-01-01 23:54:14,610 - auth_controller - ERROR - Erro no login: '>' not supported between instances of 'str' and 'datetime.datetime'
+2025-01-01 23:54:14,618 - root - ERROR - Erro ao carregar ícone no popup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 23:54:14,621 - root - ERROR - Erro ao definir ícone no MensagemPopup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\Felichia_logo.ico" not defined
+2025-01-01 23:55:51,186 - root - INFO - Sistema de logging iniciado com sucesso
+2025-01-01 23:55:51,187 - root - INFO - Logging iniciado com sucesso
+2025-01-01 23:55:51,259 - root - INFO - Tamanho da fonte alterado para: 13
+2025-01-01 23:55:51,261 - database - INFO - Tabelas criadas/verificadas com sucesso
+2025-01-01 23:55:51,331 - root - INFO - Procurando som em: C:\Users\mineg\Documents\felichia\codes\felichia\assets\sons\startup.wav
+2025-01-01 23:55:51,332 - root - INFO - Arquivo de som encontrado!
+2025-01-01 23:55:51,334 - root - INFO - Som iniciado com sucesso
+2025-01-01 23:56:00,128 - usuario_model - INFO - Usuário atualizado: aws
+2025-01-01 23:56:00,130 - auth_controller - INFO - Login bem sucedido: aws
+2025-01-01 23:56:00,267 - senha_controller - INFO - Senhas listadas com sucesso
+2025-01-01 23:56:00,268 - gerenciador_view - INFO - Lista atualizada - nenhuma senha encontrada
+2025-01-01 23:56:05,276 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 23:56:05,280 - senha_model - INFO - Nova senha criada para o site: a
+2025-01-01 23:56:05,282 - senha_controller - INFO - Nova senha adicionada para o site: a
+2025-01-01 23:56:05,292 - root - ERROR - Erro ao carregar ícone no popup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 23:56:05,294 - root - ERROR - Erro ao definir ícone no MensagemPopup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\Felichia_logo.ico" not defined
+2025-01-01 23:56:07,358 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 23:56:07,358 - senha_controller - INFO - Senhas listadas com sucesso
+2025-01-01 23:56:07,369 - gerenciador_view - INFO - Lista atualizada com 1 senhas
+2025-01-01 23:56:16,773 - auth_controller - INFO - Logout realizado: aws
+2025-01-01 23:56:28,318 - root - INFO - Sistema de logging iniciado com sucesso
+2025-01-01 23:56:28,318 - root - INFO - Logging iniciado com sucesso
+2025-01-01 23:56:28,394 - root - INFO - Tamanho da fonte alterado para: 13
+2025-01-01 23:56:28,396 - database - INFO - Tabelas criadas/verificadas com sucesso
+2025-01-01 23:56:28,466 - root - INFO - Procurando som em: C:\Users\mineg\Documents\felichia\codes\felichia\assets\sons\startup.wav
+2025-01-01 23:56:28,467 - root - INFO - Arquivo de som encontrado!
+2025-01-01 23:56:28,469 - root - INFO - Som iniciado com sucesso
+2025-01-01 23:56:37,950 - usuario_model - INFO - Usuário atualizado: aws
+2025-01-01 23:56:37,952 - auth_controller - INFO - Login bem sucedido: aws
+2025-01-01 23:56:38,086 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 23:56:38,086 - senha_controller - INFO - Senhas listadas com sucesso
+2025-01-01 23:56:38,098 - gerenciador_view - INFO - Lista atualizada com 1 senhas
+2025-01-01 23:56:48,551 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 23:56:48,557 - senha_model - INFO - Nova senha criada para o site: a
+2025-01-01 23:56:48,559 - senha_controller - INFO - Nova senha adicionada para o site: a
+2025-01-01 23:56:48,570 - root - ERROR - Erro ao carregar ícone no popup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 23:56:48,573 - root - ERROR - Erro ao definir ícone no MensagemPopup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\Felichia_logo.ico" not defined
+2025-01-01 23:56:50,345 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 23:56:50,346 - criptografia - INFO - Chave de criptografia carregada
+2025-01-01 23:56:50,346 - senha_controller - INFO - Senhas listadas com sucesso
+2025-01-01 23:56:50,363 - gerenciador_view - INFO - Lista atualizada com 2 senhas
+2025-01-01 23:58:35,187 - auth_controller - INFO - Logout realizado: aws
+2025-01-01 23:58:44,275 - auth_controller - ERROR - Erro no login: '>' not supported between instances of 'str' and 'datetime.datetime'
+2025-01-01 23:58:44,283 - root - ERROR - Erro ao carregar ícone no popup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\felichia.ico" not defined
+2025-01-01 23:58:44,285 - root - ERROR - Erro ao definir ícone no MensagemPopup: bitmap "C:\Users\mineg\Documents\felichia\codes\felichia\views\popups\assets\icones\Felichia_logo.ico" not defined

@@ -88,18 +88,22 @@ class LoginView(BaseView):
     def _fazer_login(self):
         username = self.username_entry.get()
         password = self.password_entry.get()
-        
+    
         if not username or not password:
             self._mostrar_erro("Preencha todos os campos!")
             return
-        
+    
+        # Chama o método de login do controlador de autenticação
         sucesso, mensagem = self.master.auth_controller.login(username, password)
-        
+    
         if sucesso:
             self._abrir_gerenciador()
         else:
+            # Exibe mensagem de erro caso o login falhe
             self._mostrar_erro(mensagem)
+            # Limpa o campo de senha
             self.password_entry.delete(0, "end")
+
     
     def _abrir_cadastro(self):
         from views.cadastro_view import CadastroView
