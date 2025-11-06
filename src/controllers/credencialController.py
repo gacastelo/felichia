@@ -8,7 +8,7 @@ class CredencialController:
     def __init__(self):
         self.db = Database()
 
-    def salvar_credencial(self, user_id, chave, titulo, login, site, senha_plana, tag_id):
+    def salvar_credencial(self, user_id, chave, titulo, login, site, senha_plana, tag_id=None):
         aes = AESGCM(chave)
         nonce = os.urandom(12)
         senha_cifrada = aes.encrypt(nonce, senha_plana.encode(), None)
@@ -37,6 +37,5 @@ if __name__ == "__main__":
     db = Database()
     db.setup()
     CredencialController = CredencialController()
-    CredencialController.salvar_credencial(1, "minha_chave", "Titulo", "Login", "Site", "Senha", "Tags")
-    CredencialController.listar_credenciais(1, "minha_chave")
+    CredencialController.salvar_credencial(1, "minha_chave", "Titulo", "Login", "Site", "Senha")
 
