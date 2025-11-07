@@ -10,3 +10,4 @@ def derivar_chave(senha, salt):
         hash_len=32,
         type=Type.ID
     )
+

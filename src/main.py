@@ -3,9 +3,7 @@ import sys
 import os
 
 from flet.core.textfield import NumbersOnlyInputFilter
-from zxcvbn import zxcvbn
-
-from flet.core.types import CrossAxisAlignment, MainAxisAlignment
+from rich.jupyter import display
 
 current_dir = os.path.dirname(os.path.abspath(__file__))
 if current_dir not in sys.path:
@@ -13,8 +11,9 @@ if current_dir not in sys.path:
 
 from core.database import Database
 from controllers.authController import AuthController
-from controllers.tagController import TagController
 from controllers.credencialController import CredencialController
+
+from utils.utils import check_password_strength, gerar_senha_randomica, decrypt_password
 
 
 def setup():
@@ -56,6 +55,7 @@ def build_app_drawer(page: ft.Page):
             ),
         ]
     )
+
 
 def main(page: ft.Page):
     auth_controller = AuthController()
@@ -177,31 +177,57 @@ def main(page: ft.Page):
 
         user_id = page.session.get("user_id")
         chave = page.session.get("chave")
-
+        
         credenciais_ui_list = []
 
         all_credenciais = credencial_controller.listar_credenciais(user_id, chave)
         for credencial in all_credenciais:
             credenciais_ui_list.append(
                 ft.Container(
-                    content=ft.Column([
-                        ft.Text(f"Titulo: {credencial[0]}"),  # Ex: Titulo
-                        ft.Text(f"Site: {credencial[1]}"),  # Ex: Login
-                        ft.Text(f"Login: {credencial[2]}"),  # Ex: Site
-                        ft.Text(f"Senha: {credencial[3]}"),  # Ex: Senha Cifrada
-                        ft.Text(f"Tag Id: {credencial[5]}"),  # Ex: Tag Id
+                    content=
+                    ft.Column([
+                        ft.Row([
+                            ft.Container(expand=True),
+                            ft.Text(f"Titulo: {credencial[0]}"),  # Ex: Titulo
+                            ft.Container(expand=True),
+                            ft.Text(f"Site: {credencial[1]}"),  # Ex: Login
+                            ft.Container(expand=True),
+                            ft.Text(f"Login: {credencial[2]}"),  # Ex: Site
+                            ft.Container(expand=True),
+                            #ft.Text(f"Senha: {decrypt_password(chave, credencial[3], credencial[4])}")  # Ex: Senha Cifrada
+                        ]),
+                        ft.Row([
+                            ft.TextButton("Copiar Senha", expand=1, adaptive=True),
+                            ft.TextButton("Copiar Login", expand=1, adaptive=True),
+                            ft.TextButton("Editar", expand=1, adaptive=True),
+                            ft.TextButton("Excluir", expand=1, adaptive=True)
+                        ],
+                            run_spacing=0,
+                            spacing=0,
+                            expand=True,
+                            #visible=False
+                        )
                     ]),
-                    padding=10,
                     border=ft.border.all(1, "#544E9E"),
                     border_radius=5,
-                    margin=5
+
                 )
             )
 
+        list_content = ft.Column(
+        controls=credenciais_ui_list,
+        horizontal_alignment=ft.CrossAxisAlignment.CENTER,
+        spacing=10
+    )
 
         page.title = "Felichia - Minhas Senhas"
 
         drawer = build_app_drawer(page)
+
+
+        def save_credential(e):
+            credencial_controller.salvar_credencial(user_id, chave, titulo_field.value, login_field.value, site_field.value, senha_field.value)
+            close_dlg(e)
 
         # Modal Nova Senha
 
@@ -212,8 +238,10 @@ def main(page: ft.Page):
         titulo_field = ft.TextField(label="Titulo", width=300, icon=ft.Icons.TITLE)
         login_field = ft.TextField(label="Login", width=300, icon=ft.Icons.PERSON_OUTLINE)
         site_field = ft.TextField(label="Site", width=300, icon=ft.Icons.WEB)
-        senha_field = ft.TextField(label="Senha", width=300, icon=ft.Icons.LOCK_OUTLINE, password=True,can_reveal_password=True)
-        confirma_senha_field = ft.TextField(label="Confirme sua Senha", width=300, password=True,can_reveal_password=True, icon=ft.Icons.LOCK_OUTLINE)
+        senha_field = ft.TextField(label="Senha", width=300, icon=ft.Icons.LOCK_OUTLINE, password=True,
+                                   can_reveal_password=True)
+        confirma_senha_field = ft.TextField(label="Confirme sua Senha", width=300, password=True,
+                                            can_reveal_password=True, icon=ft.Icons.LOCK_OUTLINE)
 
         strength_indicator_text = ft.Text("Força da Senha: ", size=12, visible=False)
         password_strength_bar = ft.Container(
@@ -224,13 +252,18 @@ def main(page: ft.Page):
             animate_size=300
         )
 
-        randomizer_text = ft.Text("a", size=12, visible=False, color=ft.Colors.RED_900)
+        randomizer_text = ft.Text("", size=10, visible=False, color=ft.Colors.RED_900)
 
-        save_button = ft.TextButton("Salvar", on_click=close_dlg, disabled=True)
+        save_button = ft.TextButton("Salvar", on_click=save_credential, disabled=True)
+
+        special_caracter_checkbox = ft.Checkbox(
+            value=True,
+            label="Caracteres especiais"
+        )
 
         def validate_fields(e):
             all_fields_filled = bool(
-                titulo_field.value and login_field.value and senha_field.value and confirma_senha_field.value)
+                titulo_field.value and login_field.value and site_field.value and senha_field.value and confirma_senha_field.value)
 
             passwords_match = senha_field.value == confirma_senha_field.value
 
@@ -252,55 +285,52 @@ def main(page: ft.Page):
 
             dlg_modal.update()
 
-        def check_password_strength(password: str) -> dict:
-            if not password:
-                return {"score": 0, "strength": "Vazia", "color": ft.Colors.TRANSPARENT, "width_factor": 0}
-
-            result = zxcvbn(password)
-            score = result['score']
-
-            if score == 0:
-                strength_text = "Muito Fraca"
-                color = ft.Colors.RED_500
-                width_factor = 0.2
-            elif score == 1:
-                strength_text = "Fraca"
-                color = ft.Colors.ORANGE_500
-                width_factor = 0.4
-            elif score == 2:
-                strength_text = "Média"
-                color = ft.Colors.YELLOW_500
-                width_factor = 0.6
-            elif score == 3:
-                strength_text = "Boa"
-                color = ft.Colors.LIGHT_GREEN_500
-                width_factor = 0.8
-            else:  # score 4
-                strength_text = "Forte"
-                color = ft.Colors.GREEN_500
-                width_factor = 1.0
-
-            return {
-                "score": score,
-                "strength": strength_text,
-                "color": color,
-                "width_factor": width_factor
-            }
-
         def verify_size_randomizer(e):
             if not e.control.value:
                 randomizer_text.visible = False
+                randomizer_button.disabled = True
+                randomizer_button.style = ft.ButtonStyle(bgcolor="#363285", color=ft.Colors.GREY)
             elif int(e.control.value) < 8:
-                randomizer_text.value = "Tamanho mínimo de 8 caracteres"
+                randomizer_text.value = "*Tamanho mínimo de 8 caracteres"
                 randomizer_text.visible = True
-            elif int(e.control.value) > 999:
-                randomizer_text.value = "Tamanho máximo de 999 caracteres"
+                randomizer_button.disabled = True
+                randomizer_button.style = ft.ButtonStyle(bgcolor="#363285", color=ft.Colors.GREY)
+            elif int(e.control.value) > 64:
+                randomizer_text.value = "*Tamanho máximo de 64 caracteres"
                 randomizer_text.visible = True
+                randomizer_button.disabled = True
+                randomizer_button.style = ft.ButtonStyle(bgcolor="#363285", color=ft.Colors.GREY)
             else:
                 randomizer_text.visible = False
+                randomizer_button.disabled = False
+                randomizer_button.style = ft.ButtonStyle(bgcolor="#544E9E", color=ft.Colors.WHITE)
             e.control.page.update()
             randomizer_text.update()
 
+
+        randomizer_field = ft.TextField(
+            label="Tamanho da Senha",
+            hint_text="8",
+            value="8",
+            width=150,
+            icon=ft.Icons.PASSWORD,
+            on_change=verify_size_randomizer,
+            input_filter=NumbersOnlyInputFilter(),
+            max_length=2,
+            text_align=ft.TextAlign.CENTER,
+
+        )
+
+        def gerar_senha(e):
+            senha_field.value = confirma_senha_field.value = gerar_senha_randomica(int(randomizer_field.value), special_caracter_checkbox.value)
+            validate_fields(e)
+            page.update()
+
+        randomizer_button = ft.ElevatedButton(
+            text="Gerar Senha",
+            on_click=gerar_senha,
+            width=125, style=ft.ButtonStyle(bgcolor="#544E9E", color=ft.Colors.WHITE)
+        )
 
         titulo_field.on_change = validate_fields
         login_field.on_change = validate_fields
@@ -310,53 +340,73 @@ def main(page: ft.Page):
 
         dlg_modal = ft.AlertDialog(
             modal=True,
-            title=ft.Text("Adicionar Senha"),
-            content=ft.Column([
-                titulo_field,
-                login_field,
-                site_field,
-                senha_field,
-                confirma_senha_field,
-                ft.Container(
-                    content=ft.Column(
+            content=ft.Container(
+                expand=True,
+
+                content=ft.Column([
+
+                    ft.Row(
                         [
-                            strength_indicator_text,
-                            ft.Row([
-                                password_strength_bar,
-                                ft.Container(expand=True)
-                            ], spacing=0)
-                        ],
-                        spacing=5
+                            ft.Text("Adicionar Senha", size=20, weight=ft.FontWeight.BOLD,
+                                    text_align=ft.TextAlign.CENTER)
+                        ], width=300, alignment=ft.MainAxisAlignment.CENTER
                     ),
-                    width=300,
-                    padding=ft.padding.only(left=0, right=10, bottom=5)
+
+                    # Campos de entrada
+                    titulo_field,
+                    login_field,
+                    site_field,
+                    senha_field,
+                    confirma_senha_field,
+
+                    # Indicador de Força
+                    ft.Container(
+                        content=ft.Column(
+                            [
+                                strength_indicator_text,
+                                ft.Row([
+                                    password_strength_bar,
+                                    ft.Container(expand=True)
+                                ], spacing=0)
+                            ],
+                            spacing=5
+                        ),
+                        width=300,
+                        padding=ft.padding.only(left=0, right=0, bottom=5)
+                    ),
+
+                    ft.Container(
+                        content=ft.Column(
+                            [
+                                ft.Row([
+                                    ft.Text("Gerador de Senhas", size=20, weight=ft.FontWeight.BOLD,
+                                            text_align=ft.TextAlign.CENTER)
+                                ], width=300, alignment=ft.MainAxisAlignment.CENTER),
+
+                                ft.Row([
+                                    randomizer_field,
+                                    randomizer_button,
+                                ], width=300, alignment=ft.MainAxisAlignment.CENTER),
+
+                                randomizer_text,
+                                ft.Row(
+                                    [
+                                        special_caracter_checkbox
+                                    ],
+                                    width=300, alignment=ft.MainAxisAlignment.CENTER
+                                )
+                            ]
+                        ),
+                        padding=ft.padding.only(top=15, bottom=0)
+                    ),
+
+                    ft.Container(height=20)
+
+                ],
+                    scroll=ft.ScrollMode.ADAPTIVE,
+                    horizontal_alignment=ft.CrossAxisAlignment.CENTER,
                 ),
-                ft.Container(
-                    content=ft.Column(
-                        [
-                            ft.Text("Gerador de Senhas", size=20, weight=ft.FontWeight.BOLD, text_align=ft.TextAlign.CENTER),
-
-                            ft.TextField(
-                                        label="Tamanho da Senha",
-                                        hint_text="8",
-                                        width=150,
-                                        icon=ft.Icons.PASSWORD,
-                                        on_change=verify_size_randomizer,
-                                        input_filter=NumbersOnlyInputFilter(),
-                                        max_length=3,
-                            ),
-
-                            ft.ElevatedButton(
-                                        text="Gerar Senha",
-                                        #on_click=gerar senha,
-                                        width=150,style=ft.ButtonStyle(bgcolor="#544E9E", color=ft.Colors.WHITE)
-                            ),
-
-                            randomizer_text
-                        ]
-                    )
-                )
-            ], width=600, horizontal_alignment=CrossAxisAlignment.CENTER),
+            ),
             actions=[
                 ft.TextButton("Cancelar", on_click=close_dlg),
                 save_button,
@@ -372,16 +422,34 @@ def main(page: ft.Page):
 
         # Main Content
 
-        main_content = ft.Column(
-            [
-                ft.Text("Home", size=24, weight=ft.FontWeight.BOLD),
-                ft.Text("Seu conteúdo e listas virão aqui..."),
-                ft.Container(height=300),
-            ],
-            horizontal_alignment=ft.CrossAxisAlignment.CENTER,
-            spacing=15,
-            scroll=ft.ScrollMode.ADAPTIVE,
-            expand=True
+        main_content = ft.Container(
+            ft.Column(
+                [
+                    ft.Row(
+                        [
+                            ft.Text("Home", size=24, weight=ft.FontWeight.BOLD),
+                        ],
+                        expand=4,
+                        alignment=ft.MainAxisAlignment.CENTER
+                    ),
+                    ft.Row([
+                        list_content if all_credenciais else ft.Text("Nenhuma credencial cadastrada. Clique em '+' para adicionar uma."),
+                    ],
+                    expand=4,
+                    alignment=ft.MainAxisAlignment.CENTER,
+                    width=(page.width * 0.8),
+                    wrap = True,
+                    ),
+                    ft.Container(height=300),
+                ],
+                horizontal_alignment=ft.CrossAxisAlignment.CENTER,
+                spacing=15,
+                scroll=ft.ScrollMode.ADAPTIVE,
+                expand=True,
+
+            ),
+            border=ft.border.all(1, "#544E9E"),
+            expand=4
         )
 
         fab_add = ft.FloatingActionButton(

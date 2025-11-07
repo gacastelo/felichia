@@ -27,9 +27,9 @@ class CredencialController:
         cursor.execute("SELECT titulo, login, site, senha_cifrada, nonce, tag_id FROM credenciais WHERE user_id = ?", (user_id,))
         rows = cursor.fetchall()
         conn.close()
-        for titulo, login, site, senha_cifrada, nonce, tag_id in rows:
-            senha_plana = aes.decrypt(nonce, senha_cifrada, None).decode()
-            print(f"Titulo: {titulo}, Login: {login}, Site: {site}, Senha: {senha_plana}")
+        #for titulo, login, site, senha_cifrada, nonce, tag_id in rows:
+           # senha_plana = aes.decrypt(nonce, senha_cifrada, None).decode()
+           # print(f"Titulo: {titulo}, Login: {login}, Site: {site}, Senha: {senha_plana}")
         return rows
 
 
