@@ -2,60 +2,25 @@ import flet as ft
 import sys
 import os
 
-from flet.core.textfield import NumbersOnlyInputFilter
-from rich.jupyter import display
-
 current_dir = os.path.dirname(os.path.abspath(__file__))
 if current_dir not in sys.path:
     sys.path.append(current_dir)
 
-from core.database import Database
 from controllers.authController import AuthController
 from controllers.credencialController import CredencialController
 
-from utils.utils import check_password_strength, gerar_senha_randomica, decrypt_password
+from utils.utils import setup
+
+from utils.buildAppDrawer import build_app_drawer
+from utils.credencialCard import CredencialCard
+from utils.addCredencialModal import AddCredencialModal
+from utils.editCredencialModal import EditCredencialModal
 
 
-def setup():
-    db = Database()
-    db.setup()
 
-
-def build_app_drawer(page: ft.Page):
-    def handle_navigation(e):
-        drawer_instance = page.views[-1].drawer
-        if drawer_instance:
-            drawer_instance.open = False
-        page.update()
-        page.go(e.control.data)
-
-    return ft.NavigationDrawer(
-        controls=[
-            ft.Container(height=20),
-
-            ft.ListTile(
-                leading=ft.Icon(ft.Icons.LOCK_OUTLINE),
-                title=ft.Text("Senhas"),
-                data="/home",
-                on_click=handle_navigation
-            ),
-
-            ft.ListTile(
-                leading=ft.Icon(ft.Icons.EDIT_NOTE_OUTLINED),
-                title=ft.Text("Notas"),
-                data="/notas",
-                on_click=handle_navigation
-            ),
-
-            ft.ListTile(
-                leading=ft.Icon(ft.Icons.SETTINGS),
-                title=ft.Text("Configurações"),
-                data="/config",
-                on_click=handle_navigation
-            ),
-        ]
-    )
-
+def is_logged(page: ft.Page):
+    if page.session.get("user_id") is None:
+        page.go("/")
 
 def main(page: ft.Page):
     auth_controller = AuthController()
@@ -171,269 +136,132 @@ def main(page: ft.Page):
         )
 
     def create_home_view():
-        if page.session.get("user_id") is None:
-            page.go("/")
+        is_logged(page)
         credencial_controller = CredencialController()
-
         user_id = page.session.get("user_id")
         chave = page.session.get("chave")
-        
-        credenciais_ui_list = []
 
-        all_credenciais = credencial_controller.listar_credenciais(user_id, chave)
-        for credencial in all_credenciais:
-            credenciais_ui_list.append(
-                ft.Container(
-                    content=
-                    ft.Column([
-                        ft.Row([
-                            ft.Container(expand=True),
-                            ft.Text(f"Titulo: {credencial[0]}"),  # Ex: Titulo
-                            ft.Container(expand=True),
-                            ft.Text(f"Site: {credencial[1]}"),  # Ex: Login
-                            ft.Container(expand=True),
-                            ft.Text(f"Login: {credencial[2]}"),  # Ex: Site
-                            ft.Container(expand=True),
-                            #ft.Text(f"Senha: {decrypt_password(chave, credencial[3], credencial[4])}")  # Ex: Senha Cifrada
-                        ]),
-                        ft.Row([
-                            ft.TextButton("Copiar Senha", expand=1, adaptive=True),
-                            ft.TextButton("Copiar Login", expand=1, adaptive=True),
-                            ft.TextButton("Editar", expand=1, adaptive=True),
-                            ft.TextButton("Excluir", expand=1, adaptive=True)
-                        ],
-                            run_spacing=0,
-                            spacing=0,
-                            expand=True,
-                            #visible=False
-                        )
-                    ]),
-                    border=ft.border.all(1, "#544E9E"),
-                    border_radius=5,
-
-                )
-            )
+        all_credenciais_cache = credencial_controller.listar_credenciais(user_id, chave)
 
         list_content = ft.Column(
-        controls=credenciais_ui_list,
-        horizontal_alignment=ft.CrossAxisAlignment.CENTER,
-        spacing=10
-    )
+            controls=[],
+            horizontal_alignment=ft.CrossAxisAlignment.CENTER,
+            spacing=10
+        )
+
+        search_bar = ft.SearchBar(
+                        bar_hint_text="Buscar minhas senhas...",
+                        width = (page.width * 0.75),
+                        on_change=lambda e: refresh_credenciais_list()
+                      )
+
+        def refresh_credenciais_list():
+
+            def handle_card_deleted(card_to_remove: CredencialCard):
+                cred_id_to_remove = card_to_remove.credencial_data[0]
+                all_credenciais_cache[:] = [c for c in all_credenciais_cache if c[0] != cred_id_to_remove]
+
+                refresh_credenciais_list()
+
+            search_term = search_bar.value.lower()
+
+            list_content.controls.clear()
+
+            filtered_list = []
+            if search_term:
+                for cred in all_credenciais_cache:
+                    titulo = str(cred[1]).lower()
+                    site = str(cred[2]).lower()
+                    login = str(cred[3]).lower()
+
+                    if search_term in titulo or search_term in site or search_term in login:
+                        filtered_list.append(cred)
+            else:
+                filtered_list = all_credenciais_cache
+
+            if filtered_list:
+                for credencial in filtered_list:
+                    card = CredencialCard(
+                        credencial_data=credencial,
+                        user_id=user_id,
+                        chave=chave,
+                        controller=credencial_controller,
+                        on_delete=handle_card_deleted,
+                        open_edit_modal_func=open_edit_modal
+                    )
+                    list_content.controls.append(card)
+            elif not all_credenciais_cache:
+                list_content.controls.append(
+                    ft.Text("Nenhuma credencial cadastrada. Clique em '+' para adicionar uma.")
+                )
+            else:
+                list_content.controls.append(
+                    ft.Text(f"Nenhum resultado encontrado para '{search_bar.value}'")
+                )
+
+            if list_content.page:
+                list_content.update()
 
         page.title = "Felichia - Minhas Senhas"
-
         drawer = build_app_drawer(page)
 
 
-        def save_credential(e):
-            credencial_controller.salvar_credencial(user_id, chave, titulo_field.value, login_field.value, site_field.value, senha_field.value)
-            close_dlg(e)
-
         # Modal Nova Senha
+        def on_new_credential_saved():
+            all_credenciais_cache[:] = credencial_controller.listar_credenciais(user_id, chave)
+            refresh_credenciais_list()
 
-        def close_dlg(e):
-            dlg_modal.open = False
-            e.control.page.update()
-
-        titulo_field = ft.TextField(label="Titulo", width=300, icon=ft.Icons.TITLE)
-        login_field = ft.TextField(label="Login", width=300, icon=ft.Icons.PERSON_OUTLINE)
-        site_field = ft.TextField(label="Site", width=300, icon=ft.Icons.WEB)
-        senha_field = ft.TextField(label="Senha", width=300, icon=ft.Icons.LOCK_OUTLINE, password=True,
-                                   can_reveal_password=True)
-        confirma_senha_field = ft.TextField(label="Confirme sua Senha", width=300, password=True,
-                                            can_reveal_password=True, icon=ft.Icons.LOCK_OUTLINE)
-
-        strength_indicator_text = ft.Text("Força da Senha: ", size=12, visible=False)
-        password_strength_bar = ft.Container(
-            height=8,
-            width=0,
-            bgcolor=ft.Colors.TRANSPARENT,
-            border_radius=5,
-            animate_size=300
+        add_credencial_dialog = AddCredencialModal(
+            user_id=user_id,
+            chave=chave,
+            credencialController=credencial_controller,
+            on_save_success=on_new_credential_saved
         )
 
-        randomizer_text = ft.Text("", size=10, visible=False, color=ft.Colors.RED_900)
-
-        save_button = ft.TextButton("Salvar", on_click=save_credential, disabled=True)
-
-        special_caracter_checkbox = ft.Checkbox(
-            value=True,
-            label="Caracteres especiais"
-        )
-
-        def validate_fields(e):
-            all_fields_filled = bool(
-                titulo_field.value and login_field.value and site_field.value and senha_field.value and confirma_senha_field.value)
-
-            passwords_match = senha_field.value == confirma_senha_field.value
-
-            strength_result = check_password_strength(senha_field.value)
-            if senha_field.value:
-                strength_indicator_text.visible = True
-            else:
-                strength_indicator_text.visible = False
-            strength_indicator_text.value = f"Força da Senha: {strength_result['strength']}"
-
-            password_strength_bar.width = 300 * strength_result['width_factor']
-            password_strength_bar.bgcolor = strength_result['color']
-
-            is_valid = all_fields_filled and passwords_match and strength_result['score'] >= 2
-
-            if save_button.disabled == is_valid:
-                save_button.disabled = not is_valid
-                e.control.page.update()
-
-            dlg_modal.update()
-
-        def verify_size_randomizer(e):
-            if not e.control.value:
-                randomizer_text.visible = False
-                randomizer_button.disabled = True
-                randomizer_button.style = ft.ButtonStyle(bgcolor="#363285", color=ft.Colors.GREY)
-            elif int(e.control.value) < 8:
-                randomizer_text.value = "*Tamanho mínimo de 8 caracteres"
-                randomizer_text.visible = True
-                randomizer_button.disabled = True
-                randomizer_button.style = ft.ButtonStyle(bgcolor="#363285", color=ft.Colors.GREY)
-            elif int(e.control.value) > 64:
-                randomizer_text.value = "*Tamanho máximo de 64 caracteres"
-                randomizer_text.visible = True
-                randomizer_button.disabled = True
-                randomizer_button.style = ft.ButtonStyle(bgcolor="#363285", color=ft.Colors.GREY)
-            else:
-                randomizer_text.visible = False
-                randomizer_button.disabled = False
-                randomizer_button.style = ft.ButtonStyle(bgcolor="#544E9E", color=ft.Colors.WHITE)
-            e.control.page.update()
-            randomizer_text.update()
-
-
-        randomizer_field = ft.TextField(
-            label="Tamanho da Senha",
-            hint_text="8",
-            value="8",
-            width=150,
-            icon=ft.Icons.PASSWORD,
-            on_change=verify_size_randomizer,
-            input_filter=NumbersOnlyInputFilter(),
-            max_length=2,
-            text_align=ft.TextAlign.CENTER,
-
-        )
-
-        def gerar_senha(e):
-            senha_field.value = confirma_senha_field.value = gerar_senha_randomica(int(randomizer_field.value), special_caracter_checkbox.value)
-            validate_fields(e)
+        def open_add_modal(e):
+            page.overlay.append(add_credencial_dialog)
+            add_credencial_dialog.open = True
             page.update()
 
-        randomizer_button = ft.ElevatedButton(
-            text="Gerar Senha",
-            on_click=gerar_senha,
-            width=125, style=ft.ButtonStyle(bgcolor="#544E9E", color=ft.Colors.WHITE)
-        )
+        def open_edit_modal(credencial_id: int, initial_data: dict):
+            edit_dialog = EditCredencialModal(
+                user_id=user_id,
+                chave=chave,
+                credencialController=credencial_controller,
+                on_save_success=on_new_credential_saved,
+                credencial_id=credencial_id
+            )
 
-        titulo_field.on_change = validate_fields
-        login_field.on_change = validate_fields
-        site_field.on_change = validate_fields
-        senha_field.on_change = validate_fields
-        confirma_senha_field.on_change = validate_fields
+            edit_dialog.titulo_field.value = initial_data['titulo']
+            edit_dialog.site_field.value = initial_data['site']
+            edit_dialog.login_field.value = initial_data['login']
+            edit_dialog.senha_field.value = initial_data['senha']
 
-        dlg_modal = ft.AlertDialog(
-            modal=True,
-            content=ft.Container(
-                expand=True,
 
-                content=ft.Column([
-
-                    ft.Row(
-                        [
-                            ft.Text("Adicionar Senha", size=20, weight=ft.FontWeight.BOLD,
-                                    text_align=ft.TextAlign.CENTER)
-                        ], width=300, alignment=ft.MainAxisAlignment.CENTER
-                    ),
-
-                    # Campos de entrada
-                    titulo_field,
-                    login_field,
-                    site_field,
-                    senha_field,
-                    confirma_senha_field,
-
-                    # Indicador de Força
-                    ft.Container(
-                        content=ft.Column(
-                            [
-                                strength_indicator_text,
-                                ft.Row([
-                                    password_strength_bar,
-                                    ft.Container(expand=True)
-                                ], spacing=0)
-                            ],
-                            spacing=5
-                        ),
-                        width=300,
-                        padding=ft.padding.only(left=0, right=0, bottom=5)
-                    ),
-
-                    ft.Container(
-                        content=ft.Column(
-                            [
-                                ft.Row([
-                                    ft.Text("Gerador de Senhas", size=20, weight=ft.FontWeight.BOLD,
-                                            text_align=ft.TextAlign.CENTER)
-                                ], width=300, alignment=ft.MainAxisAlignment.CENTER),
-
-                                ft.Row([
-                                    randomizer_field,
-                                    randomizer_button,
-                                ], width=300, alignment=ft.MainAxisAlignment.CENTER),
-
-                                randomizer_text,
-                                ft.Row(
-                                    [
-                                        special_caracter_checkbox
-                                    ],
-                                    width=300, alignment=ft.MainAxisAlignment.CENTER
-                                )
-                            ]
-                        ),
-                        padding=ft.padding.only(top=15, bottom=0)
-                    ),
-
-                    ft.Container(height=20)
-
-                ],
-                    scroll=ft.ScrollMode.ADAPTIVE,
-                    horizontal_alignment=ft.CrossAxisAlignment.CENTER,
-                ),
-            ),
-            actions=[
-                ft.TextButton("Cancelar", on_click=close_dlg),
-                save_button,
-            ],
-            actions_alignment=ft.MainAxisAlignment.END,
-            on_dismiss=lambda e: print("Modal dialog dismissed!"),
-        )
-
-        def button_click(e):
-            e.control.page.overlay.append(dlg_modal)
-            dlg_modal.open = True
-            e.control.page.update()
-
-        # Main Content
+            page.overlay.append(edit_dialog)
+            edit_dialog.open = True
+            page.update()
 
         main_content = ft.Container(
             ft.Column(
                 [
                     ft.Row(
                         [
-                            ft.Text("Home", size=24, weight=ft.FontWeight.BOLD),
+                            ft.Text("Minhas Senhas", size=30, weight=ft.FontWeight.BOLD),
                         ],
                         expand=4,
                         alignment=ft.MainAxisAlignment.CENTER
                     ),
+                    ft.Row(
+                        [
+                            search_bar
+                        ],
+                        expand=4,
+                        alignment=ft.MainAxisAlignment.CENTER,
+                        adaptive=True
+                    ),
                     ft.Row([
-                        list_content if all_credenciais else ft.Text("Nenhuma credencial cadastrada. Clique em '+' para adicionar uma."),
+                        list_content,
                     ],
                     expand=4,
                     alignment=ft.MainAxisAlignment.CENTER,
@@ -454,9 +282,11 @@ def main(page: ft.Page):
 
         fab_add = ft.FloatingActionButton(
             icon=ft.Icons.ADD,
-            on_click=button_click,
+            on_click=open_add_modal,
             bgcolor="#a9a1f9",
         )
+
+        refresh_credenciais_list()
 
         return ft.View(
             route="/home",

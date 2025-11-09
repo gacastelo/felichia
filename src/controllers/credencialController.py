@@ -24,13 +24,32 @@ class CredencialController:
         aes = AESGCM(chave)
         conn = self.db.get_conn()
         cursor = conn.cursor()
-        cursor.execute("SELECT titulo, login, site, senha_cifrada, nonce, tag_id FROM credenciais WHERE user_id = ?", (user_id,))
+        cursor.execute("SELECT id, titulo, login, site, senha_cifrada, nonce, tag_id FROM credenciais WHERE user_id = ?", (user_id,))
         rows = cursor.fetchall()
         conn.close()
         #for titulo, login, site, senha_cifrada, nonce, tag_id in rows:
            # senha_plana = aes.decrypt(nonce, senha_cifrada, None).decode()
            # print(f"Titulo: {titulo}, Login: {login}, Site: {site}, Senha: {senha_plana}")
         return rows
+
+    def excluir_credencial(self, user_id, credencial_id):
+        conn = self.db.get_conn()
+        conn.execute("DELETE FROM credenciais WHERE user_id = ? AND id = ?", (user_id, credencial_id))
+        conn.commit()
+        conn.close()
+        print("Credencial excluida com sucesso!")
+
+    def editar_credencial(self, user_id, chave, credencial_id, titulo, login, site, senha_plana, tag_id=None):
+        aes = AESGCM(chave)
+        nonce = os.urandom(12)
+        senha_cifrada = aes.encrypt(nonce, senha_plana.encode(), None)
+        conn = self.db.get_conn()
+        conn.execute(
+            "UPDATE credenciais SET titulo = ?, login = ?, site = ?, senha_cifrada = ?, nonce = ?, tag_id = ? WHERE user_id = ? AND id = ?",
+            (titulo, login, site, senha_cifrada, nonce, tag_id, user_id, credencial_id))
+        conn.commit()
+        conn.close()
+        print("Credencial editada com sucesso!")
 
 
 if __name__ == "__main__":

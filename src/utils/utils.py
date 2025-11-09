@@ -3,6 +3,7 @@ from zxcvbn import zxcvbn
 import string
 import secrets
 from cryptography.hazmat.primitives.ciphers.aead import AESGCM
+from core.database import Database
 
 def check_password_strength(password: str) -> dict:
     if not password:
@@ -47,7 +48,11 @@ def gerar_senha_randomica(tamanho: int, caracteres_especiais: bool) -> str:
     senha = ''.join(secrets.choice(caracteres) for i in range(tamanho))
     return senha
 
-def decrypt_password(chave, senha_cifrada, nonce):
+def decrypt_password(chave, senha_cifrada, nonce) -> str:
     aes = AESGCM(chave)
     senha_plana = aes.decrypt(nonce, senha_cifrada, None).decode()
     return senha_plana
+
+def setup():
+    db = Database()
+    db.setup()
