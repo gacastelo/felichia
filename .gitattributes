@@ -1,0 +1,3 @@
+# Ignorar HTML e TeX da contagem de linguagens
+*.html linguist-detectable=false
+*.tex linguist-detectable=false
