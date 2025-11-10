@@ -1,7 +1,6 @@
 import flet as ft
-from utils.utils import check_password_strength, gerar_senha_randomica, decrypt_password
 
-def build_app_drawer(page: ft.Page):
+def build_app_drawer(page: ft.Page, logout_function):
     def handle_navigation(e):
         drawer_instance = page.views[-1].drawer
         if drawer_instance:
@@ -12,7 +11,10 @@ def build_app_drawer(page: ft.Page):
     return ft.NavigationDrawer(
         controls=[
             ft.Container(height=20),
-
+            ft.Container(
+                content=ft.Text("Menu", size=25, weight=ft.FontWeight.BOLD, text_align=ft.TextAlign.CENTER),
+            ),
+            ft.Container(height=10),
             ft.ListTile(
                 leading=ft.Icon(ft.Icons.LOCK_OUTLINE),
                 title=ft.Text("Senhas"),
@@ -31,6 +33,12 @@ def build_app_drawer(page: ft.Page):
                 leading=ft.Icon(ft.Icons.SETTINGS),
                 title=ft.Text("Configurações"),
                 data="/config",
+                on_click=handle_navigation
+            ),
+            ft.ListTile(
+                leading=ft.Icon(ft.Icons.LOGOUT),
+                title=ft.Text("Sair"),
+                data="/logout",
                 on_click=handle_navigation
             ),
         ]

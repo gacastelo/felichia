@@ -1,5 +1,5 @@
 import flet as ft
-from utils.utils import check_password_strength, gerar_senha_randomica, decrypt_password
+from utils.utils import check_password_strength, gerar_senha_randomica, decrypt
 
 class CredencialCard(ft.Container):
 
@@ -43,13 +43,13 @@ class CredencialCard(ft.Container):
         self.info_row = ft.Row(
             [
                 ft.Icon(ft.Icons.TITLE, color="#363285", size=20),
-                ft.Text(f"{cred_titulo}", size=16, weight=ft.FontWeight.W_500, color="#E0E0E0"),
+                ft.Text(f"{cred_titulo}", size=16, weight=ft.FontWeight.W_500),
                 ft.VerticalDivider(width=1),
                 ft.Icon(ft.Icons.LANGUAGE_OUTLINED, color="#491C6E", size=20),
-                ft.Text(f"{cred_site}", size=14, italic=True, color="#E0E0E0"),
+                ft.Text(f"{cred_site}", size=14, italic=True),
                 ft.VerticalDivider(width=1),
                 ft.Icon(ft.Icons.PERSON_OUTLINE, color="#A9A1F9", size=20),
-                ft.Text(f"{cred_login}", size=14, color="#E0E0E0"),
+                ft.Text(f"{cred_login}", size=14),
             ],
             alignment=ft.MainAxisAlignment.START,
         )
@@ -68,7 +68,7 @@ class CredencialCard(ft.Container):
         self.update()
 
     def handle_hover(self, e):
-        self.bgcolor = "#0D1117" if e.data == "true" else None
+        self.bgcolor = ("#0D1117" if self.page.theme_mode == ft.ThemeMode.DARK else "#E0E0E0") if e.data == "true" else None
         self.update()
 
     def handle_button_action(self, e):
@@ -78,7 +78,7 @@ class CredencialCard(ft.Container):
             return
 
         if action == "copiar_senha":
-            decrypted = decrypt_password(self.chave, e.control.data['senha'], e.control.data['nonce'])
+            decrypted = decrypt(self.chave, e.control.data['senha'], e.control.data['nonce'])
             self.page.set_clipboard(decrypted)
             self.page.open(ft.SnackBar(ft.Text("Senha Copiada para a Área de Transferência", weight=ft.FontWeight.BOLD),
                                        bgcolor="#a9a1f9"))
@@ -96,7 +96,7 @@ class CredencialCard(ft.Container):
                 'titulo': e.control.data['titulo'],
                 'site': e.control.data['site'],
                 'login': e.control.data['login'],
-                'senha': decrypt_password(self.chave, e.control.data['senha'], e.control.data['nonce']),
+                'senha': decrypt(self.chave, e.control.data['senha'], e.control.data['nonce']),
                 'nonce': e.control.data['nonce']
 
             }

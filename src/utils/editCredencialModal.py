@@ -1,5 +1,5 @@
 import flet as ft
-from utils.utils import check_password_strength, gerar_senha_randomica, decrypt_password
+from utils.utils import check_password_strength, gerar_senha_randomica, decrypt
 from utils.addCredencialModal import AddCredencialModal
 
 class EditCredencialModal(AddCredencialModal):

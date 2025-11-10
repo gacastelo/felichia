@@ -1,5 +1,5 @@
 import flet as ft
-from utils.utils import check_password_strength, gerar_senha_randomica, decrypt_password
+from utils.utils import check_password_strength, gerar_senha_randomica, decrypt
 
 class AddCredencialModal(ft.AlertDialog):
     def __init__(self, user_id, chave, credencialController,on_save_success):

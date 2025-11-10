@@ -8,9 +8,8 @@ class Database:
 
         self.db_path = os.path.join(project_root, "storage", "data", "database.db")
 
-        print(f"Caminho do DB: {self.db_path}")
-
     def get_conn(self):
+        print(f"Conectando ao DB: {self.db_path}")
         return sqlite3.connect(self.db_path)
 
     def setup(self):
@@ -45,6 +44,15 @@ class Database:
             tag_id INTEGER,
             FOREIGN KEY(user_id) REFERENCES usuarios(id) ON DELETE CASCADE,
             FOREIGN KEY(tag_id)  REFERENCES Tags(id)  ON DELETE SET NULL
+        );
+        
+        CREATE TABLE IF NOT EXISTS notas (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            user_id INTEGER NOT NULL,
+            titulo TEXT NULL,
+            conteudo_cifrado TEXT NULL,
+            nonce BLOB NULL UNIQUE,
+            FOREIGN KEY(user_id) REFERENCES usuarios(id) ON DELETE CASCADE
         );
         """)
         conn.commit()

@@ -20,8 +20,7 @@ class CredencialController:
         conn.close()
         print("Credencial salva com sucesso!")
 
-    def listar_credenciais(self, user_id, chave):
-        aes = AESGCM(chave)
+    def listar_credenciais(self, user_id):
         conn = self.db.get_conn()
         cursor = conn.cursor()
         cursor.execute("SELECT id, titulo, login, site, senha_cifrada, nonce, tag_id FROM credenciais WHERE user_id = ?", (user_id,))
@@ -37,7 +36,7 @@ class CredencialController:
         conn.execute("DELETE FROM credenciais WHERE user_id = ? AND id = ?", (user_id, credencial_id))
         conn.commit()
         conn.close()
-        print("Credencial excluida com sucesso!")
+        print("Credencial excluída com sucesso!")
 
     def editar_credencial(self, user_id, chave, credencial_id, titulo, login, site, senha_plana, tag_id=None):
         aes = AESGCM(chave)

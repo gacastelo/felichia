@@ -4,6 +4,7 @@ import string
 import secrets
 from cryptography.hazmat.primitives.ciphers.aead import AESGCM
 from core.database import Database
+from core.config import load_settings, save_settings
 
 def check_password_strength(password: str) -> dict:
     if not password:
@@ -48,11 +49,25 @@ def gerar_senha_randomica(tamanho: int, caracteres_especiais: bool) -> str:
     senha = ''.join(secrets.choice(caracteres) for i in range(tamanho))
     return senha
 
-def decrypt_password(chave, senha_cifrada, nonce) -> str:
+def decrypt(chave, texto_cifrado, nonce) -> str:
     aes = AESGCM(chave)
-    senha_plana = aes.decrypt(nonce, senha_cifrada, None).decode()
+    senha_plana = aes.decrypt(nonce, texto_cifrado, None).decode()
     return senha_plana
 
 def setup():
     db = Database()
     db.setup()
+    load_settings()
+
+def toggle_theme(e):
+    page = e.page
+
+    new_theme_mode = ft.ThemeMode.LIGHT if e.control.value else ft.ThemeMode.DARK
+
+    page.theme_mode = new_theme_mode
+
+    page.update()
+
+    settings = load_settings()
+    settings["theme"] = "light" if e.control.value else "dark"
+    save_settings(settings)
