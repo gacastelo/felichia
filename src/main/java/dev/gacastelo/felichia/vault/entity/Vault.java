@@ -67,5 +67,11 @@ public class Vault {
     @PreUpdate
     public void preUpdate() {
         updatedAt = Instant.now();
+
+    }
+
+    public Vault(User user) {
+        this.user = user;
+        this.salt = user.getSalt();
     }
 }
