@@ -1,10 +1,9 @@
 package dev.gacastelo.felichia.auth.request;
 
-import lombok.Builder;
+import jakarta.validation.constraints.NotBlank;
 
-@Builder
 public record LoginRequest(
-        String username,
-        String password
+        @NotBlank String username,
+        @NotBlank String password
 ) {
 }

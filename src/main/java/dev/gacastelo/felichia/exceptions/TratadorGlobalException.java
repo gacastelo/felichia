@@ -38,7 +38,7 @@ public class TratadorGlobalException {
     @ExceptionHandler(MethodArgumentNotValidException.class)
     public ResponseEntity<ErroApi> tratarValidacao(MethodArgumentNotValidException ex, HttpServletRequest request) {
         List<ErroApi.ErroCampo> campos = ex.getBindingResult().getFieldErrors().stream()
-                .map(fe -> new ErroApi.ErroCampo(fe.getField(), ex.getMessage()))
+                .map(fe -> new ErroApi.ErroCampo(fe.getField(), fe.getDefaultMessage()))
                 .toList();
         return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(
                 new ErroApi(Instant.now(), 400, "Requisição Inválida", "Erro Validacao", request.getRequestURI(), campos)
