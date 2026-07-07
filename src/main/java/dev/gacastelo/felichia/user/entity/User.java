@@ -1,13 +1,19 @@
 package dev.gacastelo.felichia.user.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import dev.gacastelo.felichia.vault.entity.Vault;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.core.userdetails.UserDetails;
 
 import java.time.Instant;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.List;
 import java.util.UUID;
 
 @Entity
@@ -16,14 +22,14 @@ import java.util.UUID;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class User {
+public class User implements UserDetails {
 
     @Id
     @Column(unique = true, nullable = false)
     private UUID id;
 
     @Column(nullable = false)
-    private String name;
+    private String username;
 
     @Column(unique = true, nullable = false)
     private String email;
@@ -32,16 +38,14 @@ public class User {
     private boolean emailVerified;
 
     @Column(nullable = false)
-    private String passwordHash;
+    private String password;
 
-    @OneToOne(mappedBy = "user")
-    private Vault vault;
-
-    @Column(nullable = false)
-    private byte[] salt;
+    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true)
+    @JsonIgnore
+    private List<Vault> vaults = new ArrayList<>();
 
     @Column(nullable = false)
-    private boolean enabled;
+    private boolean enabled = true;
 
     @Column(name = "created_at", nullable = false, updatable = false)
     private Instant createdAt;
@@ -59,5 +63,15 @@ public class User {
     @PreUpdate
     public void preUpdate() {
         updatedAt = Instant.now();
+    }
+
+    @Override
+    public Collection<? extends GrantedAuthority> getAuthorities() {
+        return List.of();
+    }
+
+    @Override
+    public String getUsername() {
+        return "";
     }
 }

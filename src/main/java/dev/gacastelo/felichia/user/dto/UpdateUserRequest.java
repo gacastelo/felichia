@@ -3,9 +3,9 @@ package dev.gacastelo.felichia.user.dto;
 import lombok.Builder;
 
 @Builder
-public record UpdateUserDTO(
+public record UpdateUserRequest(
         String name,
         String email,
-        String passwordHash
+        String password
 ) {
 }

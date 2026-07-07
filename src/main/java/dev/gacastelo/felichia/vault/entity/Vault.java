@@ -8,6 +8,8 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.hibernate.annotations.OnDelete;
+import org.hibernate.annotations.OnDeleteAction;
 
 import java.time.Instant;
 import java.util.UUID;
@@ -26,11 +28,11 @@ import java.util.UUID;
 public class Vault {
 
     @Id
-    @Column(unique = true, nullable = false)
     private UUID id;
 
-    @OneToOne
-    @JoinColumn(name = "user_id", unique = true, nullable = false)
+    @ManyToOne(fetch = FetchType.LAZY)
+    @OnDelete(action = OnDeleteAction.CASCADE)
+    @JoinColumn(name = "user_id", nullable = false)
     @JsonIgnore
     private User user;
 
@@ -45,9 +47,6 @@ public class Vault {
     private byte[] nonce;
 
     @Column(nullable = false)
-    private boolean enabled;
-
-    @Column(nullable = false)
     @Positive
     private Integer version;
 
@@ -57,21 +56,31 @@ public class Vault {
     @Column(name = "updated_at", nullable = false)
     private Instant updatedAt;
 
+    @Column(name = "deleted_at")
+    private Instant deletedAt = null;
+
     @PrePersist
     public void prePersist() {
         if (id == null) id = UUID.randomUUID();
         if (createdAt == null) createdAt = Instant.now();
         if (updatedAt == null) updatedAt = Instant.now();
+        if (version == null) version = 1;
     }
 
     @PreUpdate
     public void preUpdate() {
         updatedAt = Instant.now();
-
+        version += 1;
     }
 
     public Vault(User user) {
         this.user = user;
-        this.salt = user.getSalt();
+    }
+
+    public void update(byte[] vaultData, byte[] salt, byte[] nonce, Integer version) {
+        this.vaultData = vaultData;
+        this.salt = salt;
+        this.nonce = nonce;
+        this.version = version;
     }
 }
