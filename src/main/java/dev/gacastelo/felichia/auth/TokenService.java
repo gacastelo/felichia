@@ -29,7 +29,7 @@ public class TokenService {
     }
 
     private Instant dataExpiracao() {
-        return LocalDateTime.now().plusMinutes(15).toInstant(ZoneOffset.of("-03:00"));
+        return LocalDateTime.now().plusMinutes(Config.minutesToExpireJwtToken).toInstant(ZoneOffset.of("-03:00"));
     }
 
     public String validateToken(String token) {

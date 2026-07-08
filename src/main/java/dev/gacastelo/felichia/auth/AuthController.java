@@ -4,6 +4,7 @@ import dev.gacastelo.felichia.auth.request.CreateUserRequest;
 import dev.gacastelo.felichia.auth.request.LoginRequest;
 import dev.gacastelo.felichia.user.entity.User;
 import dev.gacastelo.felichia.user.service.UserService;
+import dev.gacastelo.felichia.auth.userCustomer.UserCustomDetails;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
@@ -48,7 +49,7 @@ public class AuthController {
     }
 
     @GetMapping("/test")
-    public ResponseEntity<String> test(@AuthenticationPrincipal User user){
+    public ResponseEntity<String> test(@AuthenticationPrincipal UserCustomDetails user){
         if(user != null){
             return ResponseEntity.ok("Olá " + user.getUsername() + ", seu JWT está Válido!");
         }
