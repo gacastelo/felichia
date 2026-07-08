@@ -2,6 +2,7 @@ package dev.gacastelo.felichia.vault.entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import dev.gacastelo.felichia.user.entity.User;
+import dev.gacastelo.felichia.vault.dto.VaultCreateRequest;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.Positive;
 import lombok.AllArgsConstructor;
@@ -41,12 +42,6 @@ public class Vault {
     private byte[] vaultData;
 
     @Column(nullable = false)
-    private byte[] salt;
-
-    @Column(nullable = false)
-    private byte[] nonce;
-
-    @Column(nullable = false)
     @Positive
     private Integer version;
 
@@ -73,14 +68,13 @@ public class Vault {
         version += 1;
     }
 
-    public Vault(User user) {
+    public Vault(User user, VaultCreateRequest request) {
         this.user = user;
+        this.setVaultData(request.vaultData());
     }
 
-    public void update(byte[] vaultData, byte[] salt, byte[] nonce, Integer version) {
+    public void update(byte[] vaultData, Integer version) {
         this.vaultData = vaultData;
-        this.salt = salt;
-        this.nonce = nonce;
         this.version = version;
     }
 }
