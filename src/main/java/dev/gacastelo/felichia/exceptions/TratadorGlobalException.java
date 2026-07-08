@@ -47,8 +47,8 @@ public class TratadorGlobalException {
 
     @ExceptionHandler(VersaoDesatualizadaException.class)
     public ResponseEntity<ErroApi>tratarVersaoDesatualizada(Exception ex, HttpServletRequest request) {
-        return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(
-                new ErroApi(Instant.now(), 400, "Requisição Desatualizada", ex.getMessage(), request.getRequestURI(), List.of())
+        return ResponseEntity.status(HttpStatus.CONFLICT).body(
+                new ErroApi(Instant.now(), 409, "Conflito de versões", ex.getMessage(), request.getRequestURI(), List.of())
         );
     }
 
